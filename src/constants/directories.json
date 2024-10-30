@@ -1,0 +1,40 @@
+{
+  "folders": [
+    {
+      "name": "experience",
+      "type": "folder",
+      "contents": [
+        {
+          "name": "instructional_student_assistant",
+          "type": "folder",
+          "contents": [
+            { "name": "overview", "type": "file" },
+            { "name": "images", "type": "file" }
+          ]
+        },
+        {
+          "name": "xc_assistant_coach",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "projects",
+      "type": "folder",
+      "contents": [
+        {
+          "name": "evros",
+          "type": "folder",
+          "contents": [
+            { "name": "overview", "type": "file" },
+            { "name": "images", "type": "file" }
+          ]
+        }
+      ]
+    }
+  ],
+  "files": [
+    { "name": "README.md", "type": "file" },
+    { "name": "resume.pdf", "type": "file" }
+  ]
+}
