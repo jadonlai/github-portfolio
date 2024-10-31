@@ -18,6 +18,7 @@ export default {
           border: "#3C444D",
           collapseopen: "#161A21",
           collapsehover: "#1E2429",
+          chevronhover: "#2B3337",
         },
         orange: { DEFAULT: "#F78166" },
         green: { DEFAULT: "#238636", hover: "#2A903B", border: "#449C51" },

@@ -40,6 +40,7 @@ const Content = () => {
             imagePath="/assets/branch.svg"
             imageAltText="branch"
             text="main"
+            buttonStyles="hover:bg-gray-100 hover:cursor-default"
           />
           <div className="flex flex-row items-center space-x-1">
             <img src="/assets/branch.svg" alt="branch" />
@@ -54,7 +55,12 @@ const Content = () => {
         <div className="flex flex-row items-center space-x-3">
           <Search width={200} text="Go to file" />
           <Button
-            onClick={() => window.open("https://github.com/jadonlai", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://github.com/jadonlai/github-portfolio",
+                "_blank"
+              )
+            }
             imagePath="/assets/code_secondary.svg"
             imageAltText="code"
             text="Code"
@@ -71,7 +77,15 @@ const Content = () => {
               alt="profile"
               className="w-5 h-5 rounded-full"
             />
-            <h1 className="text-secondary text-sm font-bold">jadonlai</h1>
+            <button
+              onClick={() => {
+                window.open("https://github.com/jadonlai", "_blank");
+              }}
+            >
+              <h1 className="text-secondary text-sm font-bold hover:underline">
+                jadonlai
+              </h1>
+            </button>
             <p className="text-gray text-sm">fixed bug</p>
           </div>
         </li>

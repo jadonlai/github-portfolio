@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import { Files, Home } from "./pages";
-import File from "./components/files/File";
+import File from "./components/files/file/File";
 
 const App = () => {
   return (

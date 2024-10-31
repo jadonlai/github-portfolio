@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import FileDisplay from "./FileDisplay";
 
 interface FolderDisplayProps {
@@ -25,25 +27,37 @@ const FolderDisplay = ({
 }: FolderDisplayProps) => {
   return (
     <>
-      <button
-        onClick={onClick}
+      <Link
+        to={`/main/${path}`}
         style={{ paddingLeft: depth * 12 + 3 }}
-        className="w-full rounded-md flex flex-row py-1 space-x-2 items-center hover:bg-gray-collapsehover"
+        className="w-full rounded-md flex flex-row space-x-2 items-center hover:bg-gray-collapsehover"
       >
-        <img
-          src={`/assets/chevron_${
-            openFolders.includes(name) ? "open" : "closed"
-          }.svg`}
-          alt={`${openFolders.includes(name) ? "open" : "closed"}`}
-          className="w-3 h-3"
-        />
-        <img
-          src={`/assets/folder${openFolders.includes(name) ? "_open" : ""}.svg`}
-          alt={`folder${openFolders.includes(name) ? "_open" : ""}`}
-          className="w-4 h-4"
-        />
-        <h1 className="text-secondary truncate pr-2">{name}</h1>
-      </button>
+        <button
+          onClick={(event) => {
+            event.preventDefault();
+            onClick();
+          }}
+          className="rounded-md p-1 hover:bg-gray-chevronhover"
+        >
+          <img
+            src={`/assets/chevron_${
+              openFolders.includes(name) ? "open" : "closed"
+            }.svg`}
+            alt={`${openFolders.includes(name) ? "open" : "closed"}`}
+            className="w-3 h-3"
+          />
+        </button>
+        <div className="flex flex-row space-x-2 items-center py-1">
+          <img
+            src={`/assets/folder${
+              openFolders.includes(name) ? "_open" : ""
+            }.svg`}
+            alt={`folder${openFolders.includes(name) ? "_open" : ""}`}
+            className="w-4 h-4"
+          />
+          <h1 className="text-secondary truncate pr-2">{name}</h1>
+        </div>
+      </Link>
       {openFolders.includes(name) && contents && (
         <div key={name}>
           {contents.map((content) => (

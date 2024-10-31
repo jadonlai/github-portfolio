@@ -11,9 +11,15 @@ const Title = () => {
               alt="profile"
               className="w-6 h-6 rounded-full"
             />
-            <h1 className="text-secondary text-xl font-bold hover:underline">
-              portfolio
-            </h1>
+            <button
+              onClick={() => {
+                window.location.reload();
+              }}
+            >
+              <h1 className="text-secondary text-xl font-bold hover:underline">
+                portfolio
+              </h1>
+            </button>
             <div className="rounded-full border-[1px] border-gray-border">
               <h1 className="text-gray text-xs px-[5px] py-[1px]">Public</h1>
             </div>
@@ -25,7 +31,10 @@ const Title = () => {
             imageAltText="github"
             imageStyles="w-5 h-5"
             onClick={() => {
-              window.open("https://github.com/jadonlai", "_blank");
+              window.open(
+                "https://github.com/jadonlai/github-portfolio",
+                "_blank"
+              );
             }}
           />
         </div>

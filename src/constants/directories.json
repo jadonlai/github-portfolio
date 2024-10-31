@@ -5,7 +5,7 @@
       "type": "folder",
       "contents": [
         {
-          "name": "instructional_student_assistant",
+          "name": "ai_for_sar",
           "type": "folder",
           "contents": [
             { "name": "overview", "type": "file" },

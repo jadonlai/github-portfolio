@@ -5,7 +5,7 @@ import Tab from "./Tab";
 const Navbar = () => {
   return (
     <div className="bg-primary-100 text-secondary h-[105px] flex flex-col justify-between">
-      <div className="pt-4 ml-16 mr-4 flex flex-row items-center justify-between">
+      <div className="pt-4 mx-4 flex flex-row items-center justify-between">
         <HeaderLeft />
         <HeaderRight />
       </div>

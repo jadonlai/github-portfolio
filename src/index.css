@@ -9,3 +9,6 @@ body {
 .markdown > * {
   all: revert;
 }
+
+.light {
+}
