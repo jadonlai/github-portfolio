@@ -6,9 +6,64 @@ body {
   @apply bg-primary;
 }
 
+* {
+  @apply transition-colors duration-150;
+}
+
 .markdown > * {
   all: revert;
 }
 
+.dark {
+  --primary: #0e1117;
+  --primary-100: #02040a;
+  --primary-200: #151b23;
+  --primary-300: #15191e;
+
+  --secondary: #f0f6fb;
+
+  --gray: #9098a1;
+  --gray-100: #212830;
+  --gray-101: #242c32;
+  --gray-border: #3c444d;
+  --gray-collapseopen: #161a21;
+  --gray-collapsehover: #1e2429;
+  --gray-chevronhover: #2b3337;
+
+  --orange: #f78166;
+
+  --green: #238636;
+  --green-hover: #2a903b;
+  --green-border: #449c51;
+
+  --blue: #4493f8;
+  --blue-tag: #131d2e;
+  --blue-taghover: #1f6eeb;
+}
+
 .light {
+  --primary: #ffffff;
+  --primary-100: #f5f8fa;
+  --primary-200: #f5f8fa;
+  --primary-300: #e9edf0;
+
+  --secondary: #1f2328;
+
+  --gray: #59636e;
+  --gray-100: #e9edf0;
+  --gray-101: #eff2f5;
+  --gray-border: #d0d9e0;
+  --gray-collapseopen: #f2f3f4;
+  --gray-collapsehover: #f2f3f4;
+  --gray-chevronhover: #e0e4e6;
+
+  --orange: #fd8c73;
+
+  --green: #1e883e;
+  --green-hover: #1b8138;
+  --green-border: #1e7236;
+
+  --blue: #0a69da;
+  --blue-tag: #ddf4ff;
+  --blue-taghover: #206deb;
 }

@@ -64,6 +64,9 @@ const Content = () => {
             imagePath="/assets/code_secondary.svg"
             imageAltText="code"
             text="Code"
+            textStyles={
+              document.body.classList.contains("dark") ? "" : "text-primary"
+            }
             buttonStyles="bg-green hover:bg-green-hover border-green-border"
             border={false}
           />

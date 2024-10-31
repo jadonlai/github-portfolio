@@ -2,13 +2,17 @@ import { useState } from "react";
 import { Button } from "../interactables";
 
 const HeaderLeft = () => {
-  const [mode, setMode] = useState("night");
+  const [mode, setMode] = useState(
+    document.body.classList.contains("dark") ? "dark" : "light"
+  );
 
   return (
     <div className="flex flex-row space-x-2">
       <Button
-        onClick={() => {
-          setMode(mode === "night" ? "day" : "night");
+        onClick={async () => {
+          const newMode = mode === "dark" ? "light" : "dark";
+          setMode(newMode);
+          document.body.classList.replace(mode, newMode);
         }}
         imagePath={`/assets/${mode}.svg`}
         imageAltText={mode}
