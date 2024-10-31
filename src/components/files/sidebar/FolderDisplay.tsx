@@ -10,7 +10,7 @@ interface FolderDisplayProps {
   contents?: {
     name: string;
     type: string;
-    contents?: any;
+    contents?: { name: string; type: string }[];
   }[];
   depth: number;
   path: string;

@@ -68,10 +68,7 @@ const Content = () => {
           />
         </div>
       </div>
-      <DirectoriesList
-        topItem={<Header />}
-        items={[...structure.folders, ...structure.files]}
-      />
+      <DirectoriesList topItem={<Header />} items={structure} />
       <Readme />
     </div>
   );

@@ -17,7 +17,7 @@ const Directories = () => {
   const renderStructure = (item: {
     name: string;
     type: string;
-    contents?: any;
+    contents?: { name: string; type: string }[];
   }) => {
     if (item.type === "folder") {
       return (
@@ -44,12 +44,7 @@ const Directories = () => {
     }
   };
 
-  return (
-    <div>
-      {structure.folders.map((folder) => renderStructure(folder))}
-      {structure.files.map((file) => renderStructure(file))}
-    </div>
-  );
+  return <div>{structure.map((dir) => renderStructure(dir))}</div>;
 };
 
 export default Directories;

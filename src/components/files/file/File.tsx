@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Content } from "../../home";
+
+import structure from "../../../constants/directories.json";
 
 const File = () => {
   const [copyImage, setCopyImage] = useState("/assets/copy.svg");
@@ -19,8 +20,30 @@ const File = () => {
     };
   };
 
+  const getFile = (
+    path: string[],
+    structure: {
+      name: string;
+      contents?: { name: string; type: string; commit: string }[];
+      commit: string;
+    }[]
+  ) => {
+    if (path.length === 1) {
+      return structure.find((item: { name: string }) => item.name === path[0]);
+    }
+
+    const curPath = path[0];
+    const remainingPath = path.slice(1);
+
+    return getFile(
+      remainingPath,
+      structure.find((item: { name: string }) => item.name === curPath)
+        ?.contents ?? []
+    );
+  };
+
   return (
-    <div className="w-full h-full pt-5 px-4 space-y-6 border-l-[1px] border-l-gray-border">
+    <div className="w-full min-h-screen h-full pt-5 px-4 space-y-6 border-l-[1px] border-l-gray-border">
       <div className="h-5 flex flex-row items-center space-x-1">
         <Link to="/" className="text-blue text-base font-bold hover:underline">
           portfolio
@@ -43,7 +66,7 @@ const File = () => {
             );
           }
           return (
-            <div className="flex flex-row items-center space-x-1">
+            <div key={curPath} className="flex flex-row items-center space-x-1">
               <h1 className="text-gray text-base">/</h1>
               {pathTag}
             </div>
@@ -67,9 +90,9 @@ const File = () => {
         <div className="flex flex-row items-center space-x-2">
           <img src="/assets/logo.png" alt="logo" className="w-5 h-5" />
           <h1 className="text-secondary text-sm font-bold">jadonlai</h1>
+          <h1 className="text-secondary">{getFile(path, structure)?.commit}</h1>
         </div>
       </div>
-      <Content />
     </div>
   );
 };
