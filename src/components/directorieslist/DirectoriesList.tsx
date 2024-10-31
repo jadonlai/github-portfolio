@@ -34,10 +34,10 @@ const DirectoriesList = ({
             name={item.name}
             routePath={
               item.name === ".."
-                ? `${basePath}/${item.name}`.replace(/\/[^/]+\/\.\.$/, "")
+                ? `/${basePath}/${item.name}`.replace(/\/[^/]+\/\.\.$/, "")
                 : basePath
-                ? `${basePath}/${item.name}`
-                : item.name
+                ? `/${basePath}/${item.name}`
+                : `/${item.name}`
             }
             commit={item.commit}
             date={item.date}

@@ -26,9 +26,9 @@ const Item = ({
     >
       <div className="flex flex-row items-center space-x-2">
         <img src={imagePath} alt={imageAltText} className="w-4 h-4" />
-        {routePath ? (
+        {routePath || name === ".." ? (
           <Link
-            to={`/main/${routePath}`}
+            to={`/main${routePath}`}
             className={`${
               name === ".."
                 ? "text-gray font-bold"
@@ -38,11 +38,11 @@ const Item = ({
             {name === ".." ? name.split("").join(" ") : name}
           </Link>
         ) : (
-          <h1 className="text-secondary text-sm">{name}</h1>
+          <h1 className="text-secondary text-sm truncate">{name}</h1>
         )}
       </div>
-      <p className="text-gray text-sm">{commit}</p>
-      <p className="text-gray text-sm text-right">{date}</p>
+      <p className="text-gray text-sm truncate">{commit}</p>
+      <p className="text-gray text-sm text-right truncate">{date}</p>
     </li>
   );
 };
