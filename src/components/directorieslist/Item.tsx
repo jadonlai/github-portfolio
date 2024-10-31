@@ -24,7 +24,7 @@ const Item = ({
       style={{
         gridTemplateColumns: "1.5fr 1fr 1fr",
       }}
-      className={`h-[42px] bg-primary hover:bg-primary-200 grid grid-cols-3 items-center border-t-[1px] border-t-gray-border px-3 ${
+      className={`h-[42px] bg-primary hover:bg-primary-200 grid grid-cols-3 items-center px-3 ${
         lastItem && "rounded-b-md"
       }`}
     >

@@ -4,15 +4,13 @@ import Navbar from "../components/navbar/Navbar";
 
 const Files = () => {
   return (
-    <>
-      <div className="h-full">
-        <Navbar />
-        <div className="flex flex-row">
-          <Sidebar />
-          <Outlet />
-        </div>
+    <div className="h-full">
+      <Navbar />
+      <div className="flex flex-row">
+        <Sidebar />
+        <Outlet />
       </div>
-    </>
+    </div>
   );
 };
 

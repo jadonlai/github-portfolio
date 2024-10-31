@@ -3,38 +3,79 @@
     {
       "name": "experience",
       "type": "folder",
+      "commit": "initial commit",
+      "date": "2022-01-01",
       "contents": [
         {
           "name": "ai_for_sar",
           "type": "folder",
+          "commit": "initial commit",
+          "date": "2022-01-01",
           "contents": [
-            { "name": "overview", "type": "file" },
-            { "name": "images", "type": "file" }
+            {
+              "name": "overview",
+              "type": "file",
+              "commit": "initial commit",
+              "date": "2022-01-01"
+            },
+            {
+              "name": "images",
+              "type": "file",
+              "commit": "initial commit",
+              "date": "2022-01-01"
+            }
           ]
         },
         {
           "name": "xc_assistant_coach",
-          "type": "file"
+          "type": "file",
+          "commit": "initial commit",
+          "date": "2022-01-01"
         }
       ]
     },
     {
       "name": "projects",
       "type": "folder",
+      "commit": "initial commit",
+      "date": "2022-01-01",
       "contents": [
         {
           "name": "evros",
           "type": "folder",
+          "commit": "initial commit",
+          "date": "2022-01-01",
           "contents": [
-            { "name": "overview", "type": "file" },
-            { "name": "images", "type": "file" }
+            {
+              "name": "overview",
+              "type": "file",
+              "commit": "initial commit",
+              "date": "2022-01-01"
+            },
+            {
+              "name": "images",
+              "type": "file",
+              "commit": "initial commit",
+              "date": "2022-01-01"
+            }
           ]
         }
       ]
     }
   ],
   "files": [
-    { "name": "README.md", "type": "file" },
-    { "name": "resume.pdf", "type": "file" }
+    {
+      "name": "README.md",
+      "type": "file",
+      "commit": "initial commit",
+      "date": "2022-01-01"
+    },
+    {
+      "name": "resume.pdf",
+      "type": "file",
+      "commit": "initial commit",
+      "date": "2022-01-01",
+      "lastItem": true
+    }
   ]
 }
