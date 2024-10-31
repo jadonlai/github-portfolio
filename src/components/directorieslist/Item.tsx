@@ -7,7 +7,6 @@ interface ItemProps {
   routePath?: string;
   commit: string;
   date: string;
-  lastItem?: boolean;
 }
 
 const Item = ({
@@ -17,25 +16,26 @@ const Item = ({
   routePath,
   commit,
   date,
-  lastItem,
 }: ItemProps) => {
   return (
     <li
       style={{
         gridTemplateColumns: "1.5fr 1fr 1fr",
       }}
-      className={`h-[42px] bg-primary hover:bg-primary-200 grid grid-cols-3 items-center px-3 ${
-        lastItem && "rounded-b-md"
-      }`}
+      className="h-[42px] bg-primary hover:bg-primary-200 grid grid-cols-3 items-center px-3"
     >
       <div className="flex flex-row items-center space-x-2">
         <img src={imagePath} alt={imageAltText} className="w-4 h-4" />
         {routePath ? (
           <Link
-            to={`main/${routePath}`}
-            className="text-secondary text-sm hover:text-blue hover:underline"
+            to={`/main/${routePath}`}
+            className={`${
+              name === ".."
+                ? "text-gray font-bold"
+                : "text-secondary hover:underline"
+            } text-sm hover:text-blue`}
           >
-            {name}
+            {name === ".." ? name.split("").join(" ") : name}
           </Link>
         ) : (
           <h1 className="text-secondary text-sm">{name}</h1>

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import structure from "../../../constants/directories.json";
+import { DirectoriesList } from "../../../components/directorieslist";
+import { structure } from "../../../constants";
 
 const File = () => {
   const [copyImage, setCopyImage] = useState("/assets/copy.svg");
@@ -20,14 +21,7 @@ const File = () => {
     };
   };
 
-  const getFile = (
-    path: string[],
-    structure: {
-      name: string;
-      contents?: { name: string; type: string; commit: string }[];
-      commit: string;
-    }[]
-  ) => {
+  const getItem = (path: string[], structure: any) => {
     if (path.length === 1) {
       return structure.find((item: { name: string }) => item.name === path[0]);
     }
@@ -35,16 +29,30 @@ const File = () => {
     const curPath = path[0];
     const remainingPath = path.slice(1);
 
-    return getFile(
+    return getItem(
       remainingPath,
       structure.find((item: { name: string }) => item.name === curPath)
-        ?.contents ?? []
+        ?.contents
     );
   };
 
+  const curItem = getItem(path, structure);
+  if (!curItem) {
+    return;
+  }
+
+  console.log(path);
+
+  const backItem = {
+    name: "..",
+    type: "folder",
+    commit: "",
+    date: "",
+  };
+
   return (
-    <div className="w-full min-h-screen h-full pt-5 px-4 space-y-6 border-l-[1px] border-l-gray-border">
-      <div className="h-5 flex flex-row items-center space-x-1">
+    <div className="w-full min-h-screen h-full pt-5 px-4 border-l-[1px] border-l-gray-border">
+      <div className="h-5 flex flex-row items-center space-x-1 mb-6">
         <Link to="/" className="text-blue text-base font-bold hover:underline">
           portfolio
         </Link>
@@ -90,9 +98,28 @@ const File = () => {
         <div className="flex flex-row items-center space-x-2">
           <img src="/assets/logo.png" alt="logo" className="w-5 h-5" />
           <h1 className="text-secondary text-sm font-bold">jadonlai</h1>
-          <h1 className="text-secondary">{getFile(path, structure)?.commit}</h1>
+          <h1 className="text-gray text-sm">{curItem.commit}</h1>
         </div>
       </div>
+      {curItem.type === "folder" && (
+        <DirectoriesList
+          topItem={
+            <div
+              style={{
+                gridTemplateColumns: "1.5fr 1fr 1fr",
+              }}
+              className="grid grid-cols-3 justify-between w-full text-xs text-gray font-bold"
+            >
+              <h1>Name</h1>
+              <h1>Last commit message</h1>
+              <h1 className="text-right">Last commit date</h1>
+            </div>
+          }
+          topItemStyles="h-[40px] px-4"
+          items={[backItem, ...curItem.contents]}
+          basePath={path.join("/")}
+        />
+      )}
     </div>
   );
 };

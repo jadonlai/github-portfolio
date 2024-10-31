@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
 
 import { Files, Home } from "./pages";
-import File from "./components/files/file/File";
-import { useEffect } from "react";
+import { File } from "./pages/files";
 
 const App = () => {
   useEffect(() => {

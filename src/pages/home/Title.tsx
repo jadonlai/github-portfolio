@@ -1,4 +1,4 @@
-import { Button } from "../interactables";
+import { Button } from "../../components/interactables";
 
 const Title = () => {
   return (

@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import Sidebar from "../components/files/sidebar/Sidebar";
-import Navbar from "../components/navbar/Navbar";
+import { Navbar } from "../../components/navbar";
+import Sidebar from "./sidebar/Sidebar";
 
 const Files = () => {
   return (

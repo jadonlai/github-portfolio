@@ -1,8 +1,7 @@
-import { Button, Search } from "../interactables";
+import { Button, Search } from "../../components/interactables";
+import { DirectoriesList } from "../../components/directorieslist";
 import Readme from "./Readme";
-import { DirectoriesList } from "../directorieslist";
-
-import structure from "../../constants/directories.json";
+import { structure } from "../../constants";
 
 const Header = () => {
   return (

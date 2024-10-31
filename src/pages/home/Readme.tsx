@@ -1,7 +1,7 @@
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
-import markdown from "../../constants/readme.md";
+import { markdown } from "../../constants";
 
 const Readme = () => {
   return (

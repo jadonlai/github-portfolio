@@ -1,5 +1,7 @@
-import { Content, SideContent, Title } from "../components/home";
-import Navbar from "../components/navbar/Navbar";
+import { Navbar } from "../../components/navbar";
+import Content from "./Content";
+import SideContent from "./sidecontent/SideContent";
+import Title from "./Title";
 
 const Home = () => {
   return (
