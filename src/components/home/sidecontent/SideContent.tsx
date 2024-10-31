@@ -9,7 +9,7 @@ const SideContent = () => {
         <About />
         <Tags />
         <div className="flex flex-row space-x-2 items-center">
-          <img src="assets/book.svg" alt="book" className="h-4 w-4" />
+          <img src="/assets/book.svg" alt="book" className="h-4 w-4" />
           <button className="text-gray text-sm">Readme</button>
         </div>
       </li>

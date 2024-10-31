@@ -32,7 +32,7 @@ const Item = ({
         <img src={imagePath} alt={imageAltText} className="w-4 h-4" />
         {routePath ? (
           <Link
-            to={routePath}
+            to={`main/${routePath}`}
             className="text-secondary text-sm hover:text-blue hover:underline"
           >
             {name}

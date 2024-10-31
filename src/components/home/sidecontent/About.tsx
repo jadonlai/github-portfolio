@@ -22,7 +22,7 @@ const About = () => {
           {details.map(({ title, description }) => (
             <li key={title} className="flex flex-row space-x-2">
               <img
-                src={`assets/${title}.svg`}
+                src={`/assets/${title}.svg`}
                 alt={title}
                 className="h-4 w-4 mt-1"
               />{" "}

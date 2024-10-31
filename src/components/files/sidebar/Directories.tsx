@@ -21,22 +21,25 @@ const Directories = () => {
   }) => {
     if (item.type === "folder") {
       return (
-        <div>
-          <FolderDisplay
-            name={item.name}
-            onClick={() => handleFolderClick(item.name)}
-            handleFolderClick={handleFolderClick}
-            openFolders={openFolders}
-            contents={item.contents}
-            depth={0}
-          />
-        </div>
+        <FolderDisplay
+          key={item.name}
+          name={item.name}
+          onClick={() => handleFolderClick(item.name)}
+          handleFolderClick={handleFolderClick}
+          openFolders={openFolders}
+          contents={item.contents}
+          depth={0}
+          path={item.name}
+        />
       );
     } else {
       return (
-        <div>
-          <FileDisplay name={item.name} depth={0} />
-        </div>
+        <FileDisplay
+          key={item.name}
+          name={item.name}
+          depth={0}
+          path={item.name}
+        />
       );
     }
   };

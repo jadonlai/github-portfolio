@@ -8,7 +8,7 @@ const Readme = () => {
     <div className="mt-4 border-[1px] border-gray-border rounded-md">
       <div className="h-[48px] rounded-t-md flex flex-row items-center px-3 border-b-[1px] border-b-gray-border">
         <div className="flex flex-row items-center space-x-2">
-          <img src="assets/book.svg" alt="book" className="h-4 w-4" />
+          <img src="/assets/book.svg" alt="book" className="h-4 w-4" />
           <h1 className="text-secondary text-sm font-bold">README</h1>
         </div>
       </div>

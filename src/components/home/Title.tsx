@@ -21,7 +21,7 @@ const Title = () => {
         </div>
         <div>
           <Button
-            imagePath="assets/github.svg"
+            imagePath="/assets/github.svg"
             imageAltText="github"
             imageStyles="w-5 h-5"
             onClick={() => {

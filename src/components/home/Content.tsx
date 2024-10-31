@@ -67,7 +67,7 @@ const Content = () => {
         <li className="h-[50px] bg-primary-200 rounded-t-md flex flex-row items-center px-3">
           <div className="flex flex-row items-center space-x-2">
             <img
-              src="assets/profile.png"
+              src="/assets/profile.png"
               alt="profile"
               className="w-5 h-5 rounded-full"
             />
@@ -79,7 +79,7 @@ const Content = () => {
           {items.map((item) => (
             <Item
               key={item.name}
-              imagePath={`assets/${item.type}.svg`}
+              imagePath={`/assets/${item.type}.svg`}
               imageAltText={item.type}
               name={item.name}
               routePath={item.name}
