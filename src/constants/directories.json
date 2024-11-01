@@ -3,25 +3,25 @@
     "name": "experience",
     "type": "folder",
     "commit": "my work experience",
-    "date": "2022-01-01",
+    "date": "2023-2024",
     "contents": [
       {
         "name": "ai_for_sar",
         "type": "folder",
         "commit": "ai for search and rescue",
-        "date": "2022-01-01",
+        "date": "2024",
         "contents": [
           {
             "name": "overview",
             "type": "file",
             "commit": "initial commit",
-            "date": "2022-01-01"
+            "date": "2024"
           },
           {
-            "name": "images",
+            "name": "demo",
             "type": "file",
-            "commit": "demo images",
-            "date": "2022-01-01"
+            "commit": "demonstration video of the public transit search widget in use",
+            "date": "2024"
           }
         ]
       },
@@ -29,7 +29,7 @@
         "name": "xc_assistant_coach",
         "type": "file",
         "commit": "slo high school cross country",
-        "date": "2022-01-01"
+        "date": "2023 - present"
       }
     ]
   },
@@ -37,27 +37,127 @@
     "name": "projects",
     "type": "folder",
     "commit": "my personal and work projects",
-    "date": "2022-01-01",
+    "date": "2020 - present",
     "contents": [
       {
         "name": "evros",
         "type": "folder",
         "commit": "full stack mobile app",
-        "date": "2022-01-01",
+        "date": "present",
         "contents": [
           {
             "name": "overview",
             "type": "file",
             "commit": "initial commit",
-            "date": "2022-01-01"
+            "date": "present"
           },
           {
-            "name": "images",
+            "name": "demo",
             "type": "file",
-            "commit": "demo images",
-            "date": "2022-01-01"
+            "commit": "demonstration video of the app in use",
+            "date": "present"
           }
         ]
+      },
+      {
+        "name": "physics_engine",
+        "type": "folder",
+        "commit": "2d rigid body physics engine from scratch",
+        "date": "present",
+        "contents": [
+          {
+            "name": "overview",
+            "type": "file",
+            "commit": "initial commit",
+            "date": "present"
+          },
+          {
+            "name": "demo",
+            "type": "file",
+            "commit": "photos of current progress in the engine",
+            "date": "present"
+          }
+        ]
+      },
+      {
+        "name": "wikipedia_game_solver",
+        "type": "folder",
+        "commit": "analysis of ai algorithms: bfs, dfs, gbfs, a*",
+        "date": "2024",
+        "contents": [
+          {
+            "name": "overview",
+            "type": "file",
+            "commit": "initial commit",
+            "date": "2024"
+          },
+          {
+            "name": "results",
+            "type": "folder",
+            "commit": "graphs and video demo of the solver",
+            "date": "2024",
+            "contents": [
+              {
+                "name": "demo",
+                "type": "file",
+                "commit": "video demo of the solver in use",
+                "date": "2024"
+              },
+              {
+                "name": "graphs",
+                "type": "file",
+                "commit": "graphs of the solver performance and results",
+                "date": "2024"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "tiny_file_system",
+        "type": "folder",
+        "commit": "custom file system that can be mounted on a unix file",
+        "date": "2024",
+        "contents": [
+          {
+            "name": "overview",
+            "type": "file",
+            "commit": "initial commit",
+            "date": "2024"
+          },
+          {
+            "name": "product",
+            "type": "file",
+            "commit": "description of the file system's features",
+            "date": "2024"
+          }
+        ]
+      },
+      {
+        "name": "data_science_for_cars",
+        "type": "folder",
+        "commit": "analysis of used cars for college students using knn/kmeans algorithms",
+        "date": "2024",
+        "contents": [
+          {
+            "name": "overview",
+            "type": "file",
+            "commit": "initial commit",
+            "date": "2024"
+          },
+          {
+            "name": "results",
+            "type": "file",
+            "commit": "documentation of the results",
+            "date": "2024"
+          }
+        ]
+      },
+      {
+        "name": "pace_predictor",
+        "type": "file",
+        "commit": "machine learning project",
+        "date": "2020"
       }
     ]
   },

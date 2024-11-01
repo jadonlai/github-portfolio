@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import { DirectoriesList } from "../../../components/directorieslist";
 import { structure } from "../../../constants";
+import FileContent from "./FileContent";
 
 const File = () => {
   const [copyImage, setCopyImage] = useState("/assets/copy.svg");
@@ -118,18 +119,18 @@ const File = () => {
           </h1>
         </div>
       </div>
-      {(curItem.type === "folder" || path[0] === "/main") && (
+      {curItem.type === "folder" || path[0] === "/main" ? (
         <DirectoriesList
           topItem={
             <div
               style={{
-                gridTemplateColumns: "1.5fr 1fr 1fr",
+                gridTemplateColumns: "1fr 1fr 1fr",
               }}
               className="grid grid-cols-3 justify-between w-full text-xs text-gray font-bold truncate"
             >
               <h1>Name</h1>
-              <h1>Last commit message</h1>
-              <h1 className="text-right">Last commit date</h1>
+              <h1>Description</h1>
+              <h1 className="text-right">Timeframe</h1>
             </div>
           }
           topItemStyles="h-[40px] px-4"
@@ -138,6 +139,8 @@ const File = () => {
           }
           basePath={path[0] === "/main" ? "" : path.join("/")}
         />
+      ) : (
+        <FileContent />
       )}
     </div>
   );

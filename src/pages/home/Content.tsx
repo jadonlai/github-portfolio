@@ -9,7 +9,7 @@ const Header = () => {
       <img
         src="/assets/profile.png"
         alt="profile"
-        className="w-5 h-5 rounded-full"
+        className="w-5 h-5 rounded-full border-[1px] border-gray-border"
       />
       <button
         onClick={() => {
@@ -40,7 +40,7 @@ const Content = () => {
           <div className="flex flex-row items-center space-x-1">
             <img src="/assets/branch.svg" alt="branch" />
             <h1 className="text-secondary text-sm font-bold">1</h1>
-            <h1 className="text-gray text-sm">Branches</h1>
+            <h1 className="text-gray text-sm">Branch</h1>
           </div>
           <div className="flex flex-row items-center space-x-1">
             <img src="/assets/tags.svg" alt="tags" />

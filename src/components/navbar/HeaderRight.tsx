@@ -9,7 +9,7 @@ const HeaderRight = () => {
         <img
           src="/assets/profile.png"
           alt="profile"
-          className="w-8 h-8 rounded-full"
+          className="w-8 h-8 rounded-full border-[1px] border-gray-border"
         />
       </button>
     </div>

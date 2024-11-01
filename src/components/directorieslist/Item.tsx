@@ -20,7 +20,7 @@ const Item = ({
   return (
     <li
       style={{
-        gridTemplateColumns: "1.5fr 1fr 1fr",
+        gridTemplateColumns: "1fr 1fr 1fr",
       }}
       className="h-[42px] bg-primary hover:bg-primary-200 grid grid-cols-3 items-center px-3"
     >

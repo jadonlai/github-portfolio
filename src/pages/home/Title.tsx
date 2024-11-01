@@ -9,7 +9,7 @@ const Title = () => {
             <img
               src="/assets/profile.png"
               alt="profile"
-              className="w-6 h-6 rounded-full"
+              className="w-6 h-6 rounded-full border-[1px] border-gray-border"
             />
             <button
               onClick={() => {
@@ -25,7 +25,15 @@ const Title = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="flex flex-row justify-end space-x-2">
+          <Button
+            imagePath="/assets/gmail.svg"
+            imageAltText="gmail"
+            imageStyles="w-5 h-5"
+            onClick={() => {
+              window.location.href = "mailto:jadonlai.314@.com";
+            }}
+          />
           <Button
             imagePath="/assets/github.svg"
             imageAltText="github"
@@ -33,6 +41,17 @@ const Title = () => {
             onClick={() => {
               window.open(
                 "https://github.com/jadonlai/github-portfolio",
+                "_blank"
+              );
+            }}
+          />
+          <Button
+            imagePath="/assets/linkedin.svg"
+            imageAltText="linkedin"
+            imageStyles="w-5 h-5"
+            onClick={() => {
+              window.open(
+                "https://www.linkedin.com/in/jadon-lai-16b550242/",
                 "_blank"
               );
             }}

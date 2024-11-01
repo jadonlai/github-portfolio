@@ -29,8 +29,8 @@ const FolderDisplay = ({
     <>
       <Link
         to={`/main/${path}`}
-        style={{ paddingLeft: depth * 12 + 3 }}
-        className="w-full rounded-md flex flex-row space-x-2 items-center hover:bg-gray-collapsehover"
+        style={{ paddingLeft: depth * 12 }}
+        className="w-full rounded-md flex flex-row space-x-1 items-center hover:bg-gray-collapsehover"
       >
         <button
           onClick={(event) => {
