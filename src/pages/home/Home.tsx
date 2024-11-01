@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <div className="h-full">
       <Navbar />
-      <div className="h-full w-[72.5%] mx-auto">
+      <div className="mx-auto h-full w-[72.5%]">
         <Title />
-        <div className="flex flex-row h-full mt-6 space-x-5">
+        <div className="mt-6 flex h-full flex-row space-x-5">
           <Content />
           <SideContent />
         </div>

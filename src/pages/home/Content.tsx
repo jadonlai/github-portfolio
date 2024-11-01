@@ -9,18 +9,18 @@ const Header = () => {
       <img
         src="/assets/profile.png"
         alt="profile"
-        className="w-5 h-5 rounded-full border-[1px] border-gray-border"
+        className="size-5 rounded-full border-[1px] border-gray-border"
       />
       <button
         onClick={() => {
           window.open("https://github.com/jadonlai", "_blank");
         }}
       >
-        <h1 className="text-secondary text-sm font-bold hover:underline">
+        <h1 className="text-sm font-bold text-secondary hover:underline">
           jadonlai
         </h1>
       </button>
-      <p className="text-gray text-sm">fixed bug</p>
+      <p className="text-sm text-gray">fixed bug</p>
     </div>
   );
 };
@@ -28,7 +28,7 @@ const Header = () => {
 const Content = () => {
   return (
     <div className="w-[73.75%]">
-      <div className="flex flex-row justify-between items-start">
+      <div className="flex flex-row items-start justify-between">
         <div className="flex flex-row items-center space-x-3">
           <Button
             onClick={() => {}}
@@ -39,12 +39,12 @@ const Content = () => {
           />
           <div className="flex flex-row items-center space-x-1">
             <img src="/assets/branch.svg" alt="branch" />
-            <h1 className="text-secondary text-sm font-bold">1</h1>
-            <h1 className="text-gray text-sm">Branch</h1>
+            <h1 className="text-sm font-bold text-secondary">1</h1>
+            <h1 className="text-sm text-gray">Branch</h1>
           </div>
           <div className="flex flex-row items-center space-x-1">
             <img src="/assets/tags.svg" alt="tags" />
-            <h1 className="text-gray text-sm">Tags</h1>
+            <h1 className="text-sm text-gray">Tags</h1>
           </div>
         </div>
         <div className="flex flex-row items-center space-x-3">
@@ -53,7 +53,7 @@ const Content = () => {
             onClick={() =>
               window.open(
                 "https://github.com/jadonlai/github-portfolio",
-                "_blank"
+                "_blank",
               )
             }
             imagePath="/assets/code_secondary.svg"

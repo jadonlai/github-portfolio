@@ -11,10 +11,10 @@ const FileDisplay = ({ name, depth, path }: FileDisplayProps) => {
     <Link
       to={`/main/${path}`}
       style={{ paddingLeft: depth * 12 + 23 }}
-      className="w-full rounded-md flex flex-row py-1 space-x-2 items-center hover:bg-gray-collapsehover"
+      className="flex w-full flex-row items-center space-x-2 rounded-md py-1 hover:bg-gray-collapsehover"
     >
-      <img src="/assets/file.svg" alt="file" className="w-4 h-4" />
-      <h1 className="text-secondary truncate pr-2">{name}</h1>
+      <img src="/assets/file.svg" alt="file" className="size-4" />
+      <h1 className="truncate pr-2 text-secondary">{name}</h1>
     </Link>
   );
 };

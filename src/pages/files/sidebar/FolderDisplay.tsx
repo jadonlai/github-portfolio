@@ -30,7 +30,7 @@ const FolderDisplay = ({
       <Link
         to={`/main/${path}`}
         style={{ paddingLeft: depth * 12 }}
-        className="w-full rounded-md flex flex-row space-x-1 items-center hover:bg-gray-collapsehover"
+        className="flex w-full flex-row items-center space-x-1 rounded-md hover:bg-gray-collapsehover"
       >
         <button
           onClick={(event) => {
@@ -44,18 +44,18 @@ const FolderDisplay = ({
               openFolders.includes(name) ? "open" : "closed"
             }.svg`}
             alt={`${openFolders.includes(name) ? "open" : "closed"}`}
-            className="w-3 h-3"
+            className="size-3"
           />
         </button>
-        <div className="flex flex-row space-x-2 items-center py-1">
+        <div className="flex flex-row items-center space-x-2 py-1">
           <img
             src={`/assets/folder${
               openFolders.includes(name) ? "_open" : ""
             }.svg`}
             alt={`folder${openFolders.includes(name) ? "_open" : ""}`}
-            className="w-4 h-4"
+            className="size-4"
           />
-          <h1 className="text-secondary truncate pr-2">{name}</h1>
+          <h1 className="truncate pr-2 text-secondary">{name}</h1>
         </div>
       </Link>
       {openFolders.includes(name) && contents && (

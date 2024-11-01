@@ -8,7 +8,7 @@ const Tag = ({ label, link, tagStyles }: TagProps) => {
   return (
     <button
       onClick={() => window.open(link, "_blank")}
-      className={`group bg-blue-tag hover:bg-blue-taghover rounded-full w-fit py-1 px-3 ${tagStyles}`}
+      className={`group w-fit rounded-full bg-blue-tag px-3 py-1 hover:bg-blue-taghover ${tagStyles}`}
     >
       <h1
         className={`text-blue ${

@@ -22,27 +22,27 @@ const Item = ({
       style={{
         gridTemplateColumns: "1fr 1fr 1fr",
       }}
-      className="h-[42px] bg-primary hover:bg-primary-200 grid grid-cols-3 items-center px-3"
+      className="grid h-[42px] grid-cols-3 items-center bg-primary px-3 hover:bg-primary-200"
     >
       <div className="flex flex-row items-center space-x-2">
-        <img src={imagePath} alt={imageAltText} className="w-4 h-4" />
+        <img src={imagePath} alt={imageAltText} className="size-4" />
         {routePath || name === ".." ? (
           <Link
             to={`/main${routePath}`}
             className={`${
               name === ".."
-                ? "text-gray font-bold"
+                ? "font-bold text-gray"
                 : "text-secondary hover:underline"
             } text-sm hover:text-blue`}
           >
             {name === ".." ? name.split("").join(" ") : name}
           </Link>
         ) : (
-          <h1 className="text-secondary text-sm truncate">{name}</h1>
+          <h1 className="truncate text-sm text-secondary">{name}</h1>
         )}
       </div>
-      <p className="text-gray text-sm truncate">{commit}</p>
-      <p className="text-gray text-sm text-right truncate">{date}</p>
+      <p className="truncate text-sm text-gray">{commit}</p>
+      <p className="truncate text-right text-sm text-gray">{date}</p>
     </li>
   );
 };

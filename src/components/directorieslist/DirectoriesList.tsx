@@ -19,9 +19,9 @@ const DirectoriesList = ({
   basePath,
 }: DirectoriesListProps) => {
   return (
-    <ul className="mt-4 border-[1px] border-gray-border divide-y-[1px] divide-gray-border rounded-md">
+    <ul className="mt-4 divide-y-[1px] divide-gray-border rounded-md border-[1px] border-gray-border">
       <li
-        className={`h-[50px] bg-primary-200 rounded-t-md flex flex-row items-center px-3 ${topItemStyles}`}
+        className={`flex h-[50px] flex-row items-center rounded-t-md bg-primary-200 px-3 ${topItemStyles}`}
       >
         {topItem}
       </li>
@@ -36,8 +36,8 @@ const DirectoriesList = ({
               item.name === ".."
                 ? `/${basePath}/${item.name}`.replace(/\/[^/]+\/\.\.$/, "")
                 : basePath
-                ? `/${basePath}/${item.name}`
-                : `/${item.name}`
+                  ? `/${basePath}/${item.name}`
+                  : `/${item.name}`
             }
             commit={item.commit}
             date={item.date}

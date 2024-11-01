@@ -11,9 +11,9 @@ const Sidebar = () => {
           onClick={() => {}}
           buttonStyles="border-none bg-gray-collapseopen hover:bg-gray-collapsehover"
         />
-        <h1 className="text-secondary text-base font-bold">Files</h1>
+        <h1 className="text-base font-bold text-secondary">Files</h1>
       </div>
-      <div className="flex flex-row items-center justify-between mt-4">
+      <div className="mt-4 flex flex-row items-center justify-between">
         <Button
           imagePath="/assets/branch.svg"
           imageAltText="branch"

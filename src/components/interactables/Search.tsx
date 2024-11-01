@@ -8,17 +8,17 @@ const Search = ({ width, height = 32, text }: SearchProps) => {
   return (
     <div
       style={{ width: `${width}px`, height: `${height}px` }}
-      className={`bg-primary border-[1px] border-gray-border focus-within:border-[2px] focus-within:border-blue flex flex-row items-center justify-between rounded-md py-1 pl-3 pr-2 space-x-2`}
+      className={`flex flex-row items-center justify-between space-x-2 rounded-md border-[1px] border-gray-border bg-primary py-1 pl-3 pr-2 focus-within:border-[2px] focus-within:border-blue`}
     >
       <div className="flex flex-row items-center space-x-2 text-sm">
         <img src={"/assets/search.svg"} alt="search" />
         <input
           placeholder={text}
-          className="bg-primary outline-none text-secondary w-28"
+          className="w-28 bg-primary text-secondary outline-none"
         />
       </div>
-      <div className="bg-primary-200 border-[1px] border-gray-border rounded-md">
-        <p className="text-secondary text-xs mx-1">t</p>
+      <div className="rounded-md border-[1px] border-gray-border bg-primary-200">
+        <p className="mx-1 text-xs text-secondary">t</p>
       </div>
     </div>
   );

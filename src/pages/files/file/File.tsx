@@ -41,7 +41,7 @@ const File = () => {
     return getItem(
       remainingPath,
       structure.find((item: { name: string }) => item.name === curPath)
-        ?.contents
+        ?.contents,
     );
   };
 
@@ -58,13 +58,13 @@ const File = () => {
   };
 
   return (
-    <div className="w-full min-h-screen h-full pt-5 px-4 border-l-[1px] border-l-gray-border">
-      <div className="h-5 flex flex-row items-center space-x-1 mb-6">
-        <Link to="/" className="text-blue text-base font-bold hover:underline">
+    <div className="h-full min-h-screen w-full border-l-[1px] border-l-gray-border px-4 pt-5">
+      <div className="mb-6 flex h-5 flex-row items-center space-x-1">
+        <Link to="/" className="text-base font-bold text-blue hover:underline">
           portfolio
         </Link>
         {path[0] === "/main" ? (
-          <h1 className="text-gray text-base">/</h1>
+          <h1 className="text-base text-gray">/</h1>
         ) : (
           <div className="flex flex-row items-center space-x-1">
             {path.map((item, index) => {
@@ -72,13 +72,13 @@ const File = () => {
               curPath += `/${item}`;
               if (index === path.length - 1) {
                 pathTag = (
-                  <h1 className="text-secondary text-base font-bold">{item}</h1>
+                  <h1 className="text-base font-bold text-secondary">{item}</h1>
                 );
               } else {
                 pathTag = (
                   <Link
                     to={curPath}
-                    className="text-blue text-base hover:underline"
+                    className="text-base text-blue hover:underline"
                   >
                     {item}
                   </Link>
@@ -89,7 +89,7 @@ const File = () => {
                   key={curPath}
                   className="flex flex-row items-center space-x-1"
                 >
-                  <h1 className="text-gray text-base">/</h1>
+                  <h1 className="text-base text-gray">/</h1>
                   {pathTag}
                 </div>
               );
@@ -99,22 +99,22 @@ const File = () => {
                 handleCopyImage();
                 navigator.clipboard.writeText(location.pathname.slice(6));
               }}
-              className="w-7 h-7 rounded-md hover:bg-gray-collapsehover flex justify-center items-center"
+              className="flex size-7 items-center justify-center rounded-md hover:bg-gray-collapsehover"
             >
               {copyImage === "/assets/copy.svg" ? (
-                <img src="/assets/copy.svg" alt="copy" className="w-4 h-4" />
+                <img src="/assets/copy.svg" alt="copy" className="size-4" />
               ) : (
-                <img src="/assets/check.svg" alt="check" className="w-4 h-4" />
+                <img src="/assets/check.svg" alt="check" className="size-4" />
               )}
             </button>
           </div>
         )}
       </div>
-      <div className="w-full p-3 flex flex-row items-center justify-between rounded-md border-[1px] border-gray-border">
+      <div className="flex w-full flex-row items-center justify-between rounded-md border-[1px] border-gray-border p-3">
         <div className="flex flex-row items-center space-x-2">
-          <img src="/assets/logo.png" alt="logo" className="w-5 h-5" />
-          <h1 className="text-secondary text-sm font-bold">jadonlai</h1>
-          <h1 className="text-gray text-sm">
+          <img src="/assets/logo.png" alt="logo" className="size-5" />
+          <h1 className="text-sm font-bold text-secondary">jadonlai</h1>
+          <h1 className="text-sm text-gray">
             {path[0] === "/main" ? "initial commit" : curItem.commit}
           </h1>
         </div>
@@ -126,7 +126,7 @@ const File = () => {
               style={{
                 gridTemplateColumns: "1fr 1fr 1fr",
               }}
-              className="grid grid-cols-3 justify-between w-full text-xs text-gray font-bold truncate"
+              className="grid w-full grid-cols-3 justify-between truncate text-xs font-bold text-gray"
             >
               <h1>Name</h1>
               <h1>Description</h1>

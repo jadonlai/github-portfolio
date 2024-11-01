@@ -9,9 +9,9 @@ interface TabProps {
 const Tab = ({ title, imagePath, selected = false }: TabProps) => {
   return (
     <Link to="/" className={selected ? "border-b-2 border-b-orange" : ""}>
-      <div className="flex flex-row items-center space-x-2 hover:bg-primary-300 rounded-md py-1 px-3 my-2">
-        <img src={imagePath} alt="navbarIcon" className="w-4 h-4" />
-        <h1 className={`text-secondary text-sm ${selected ? "font-bold" : ""}`}>
+      <div className="my-2 flex flex-row items-center space-x-2 rounded-md px-3 py-1 hover:bg-primary-300">
+        <img src={imagePath} alt="navbarIcon" className="size-4" />
+        <h1 className={`text-sm text-secondary ${selected ? "font-bold" : ""}`}>
           {title}
         </h1>
       </div>

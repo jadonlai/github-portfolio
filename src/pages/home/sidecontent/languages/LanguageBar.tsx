@@ -5,11 +5,11 @@ interface LanguarBarProps {
 const LanguageBar = ({ languages }: LanguarBarProps) => {
   const totalProficiency = languages.reduce(
     (acc, current) => acc + current.proficiency,
-    0
+    0,
   );
 
   return (
-    <ul key={0} className="flex flex-row space-x-[2px] h-2 mb-3">
+    <ul key={0} className="mb-3 flex h-2 flex-row space-x-[2px]">
       {languages.map(({ proficiency, color }, index) => (
         <li
           key={index}

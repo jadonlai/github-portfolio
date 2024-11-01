@@ -56,8 +56,8 @@ const Languages = () => {
 
   return (
     <>
-      <div className="h-[32px] flex flex-row items-center justify-between mb-3">
-        <h1 className="text-secondary text-base font-bold">Languages</h1>
+      <div className="mb-3 flex h-[32px] flex-row items-center justify-between">
+        <h1 className="text-base font-bold text-secondary">Languages</h1>
       </div>
       <LanguageBar languages={languages} />
       <LanguageTags languages={languages} />

@@ -9,18 +9,18 @@ interface LanguageTagProps {
 
 const LanguageTags = ({ languages }: LanguageTagProps) => {
   return (
-    <ul className="flex flex-wrap space-x-5 -ml-5 space-y-1">
+    <ul className="-ml-5 flex flex-wrap space-x-5 space-y-1">
       {languages.map(({ name, color, proficiency, tagStyles }) => (
         <li
           key={name}
-          className={`flex flex-row space-x-2 items-center ${tagStyles}`}
+          className={`flex flex-row items-center space-x-2 ${tagStyles}`}
         >
           <div
             style={{ backgroundColor: color }}
-            className="w-2 h-2 rounded-full"
+            className="size-2 rounded-full"
           />
-          <p className="text-secondary text-xs font-bold">{name}</p>
-          <p className="text-gray text-xs">
+          <p className="text-xs font-bold text-secondary">{name}</p>
+          <p className="text-xs text-gray">
             {proficiency} yr
             {proficiency !== 1 && "s"}
           </p>
