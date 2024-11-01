@@ -1,0 +1,30 @@
+[
+  {
+    "label": "tensorflow",
+    "link": "https://tensorflow.org/",
+    "tagStyles": "ml-1"
+  },
+  {
+    "label": "pytorch",
+    "link": "https://pytorch.org/"
+  },
+  {
+    "label": "python",
+    "link": "https://www.python.org/"
+  },
+  {
+    "label": "javascript",
+    "link": "https://www.javascript.com/"
+  },
+  {
+    "label": "typescript",
+    "link": "https://www.typescriptlang.org/"
+  },
+  { "label": "react", "link": "https://react.dev/" },
+  { "label": "tailwindcss", "link": "https://tailwindcss.com/" },
+  {
+    "label": "appwrite",
+    "link": "https://appwrite.io/"
+  },
+  { "label": "unity", "link": "https://unity.com/" }
+]

@@ -8,7 +8,7 @@ const HeaderLeft = () => {
 
   return (
     <div className="flex flex-row space-x-2">
-      <Button
+      {/* <Button
         onClick={async () => {
           const newMode = mode === "dark" ? "light" : "dark";
           setMode(newMode);
@@ -18,7 +18,7 @@ const HeaderLeft = () => {
         imageAltText={mode}
         imageStyles="w-4 h-4"
         buttonStyles="px-1.5 bg-primary-100 mr-2"
-      />
+      /> */}
       <img src="/assets/logo.png" alt="logo" className="w-8 h-8" />
       <div className="ml-4 flex flex-row items-center">
         <button

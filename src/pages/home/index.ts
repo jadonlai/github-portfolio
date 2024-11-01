@@ -5,8 +5,8 @@ import LanguageBar from "./sidecontent/languages/LanguageBar";
 import Languages from "./sidecontent/languages/Languages";
 import LanguageTags from "./sidecontent/languages/LanguageTags";
 import Readme from "./Readme";
-import Tag from "./sidecontent/about/Tag";
-import Tags from "./sidecontent/about/Tags";
+import Tag from "./sidecontent/tags/Tag";
+import Tags from "./sidecontent/tags/Tags";
 import Title from "./Title";
 
 export {

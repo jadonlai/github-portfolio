@@ -1,4 +1,6 @@
-import structure from "./directories.json";
+import about from "./about";
 import markdown from "./readme.md";
+import structure from "./directories.json";
+import technologies from "./technologies.json";
 
-export { structure, markdown };
+export { about, markdown, structure, technologies };
