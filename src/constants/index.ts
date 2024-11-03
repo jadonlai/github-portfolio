@@ -1,5 +1,5 @@
 import about from "./about";
-import markdown from "./readme.md";
+import markdown from "./README.md";
 import structure from "./directories.json";
 import technologies from "./technologies.json";
 

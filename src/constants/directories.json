@@ -12,7 +12,7 @@
         "date": "2024",
         "contents": [
           {
-            "name": "overview",
+            "name": "ai4sar_overview.md",
             "type": "file",
             "file_type": "markdown",
             "commit": "initial commit",
@@ -28,7 +28,7 @@
         ]
       },
       {
-        "name": "xc_assistant_coach",
+        "name": "xc_assistant_coach.md",
         "type": "file",
         "file_type": "markdown",
         "commit": "slo high school cross country",
@@ -49,7 +49,7 @@
         "date": "present",
         "contents": [
           {
-            "name": "overview",
+            "name": "evros_overview.md",
             "type": "file",
             "file_type": "markdown",
             "commit": "initial commit",
@@ -71,7 +71,7 @@
         "date": "present",
         "contents": [
           {
-            "name": "overview",
+            "name": "physics_overview.md",
             "type": "file",
             "file_type": "markdown",
             "commit": "initial commit",
@@ -93,7 +93,7 @@
         "date": "2024",
         "contents": [
           {
-            "name": "overview",
+            "name": "wikipedia_overview.md",
             "type": "file",
             "file_type": "markdown",
             "commit": "initial commit",
@@ -130,14 +130,14 @@
         "date": "2024",
         "contents": [
           {
-            "name": "overview",
+            "name": "tfs_overview",
             "type": "file",
             "file_type": "markdown",
             "commit": "initial commit",
             "date": "2024"
           },
           {
-            "name": "product",
+            "name": "tfs_product.md",
             "type": "file",
             "file_type": "markdown",
             "commit": "description of the file system's features",
@@ -152,14 +152,14 @@
         "date": "2024",
         "contents": [
           {
-            "name": "overview",
+            "name": "cars_overview.md",
             "type": "file",
             "file_type": "markdown",
             "commit": "initial commit",
             "date": "2024"
           },
           {
-            "name": "results",
+            "name": "cars_results.md",
             "type": "file",
             "file_type": "markdown",
             "commit": "documentation of the results",
@@ -168,7 +168,7 @@
         ]
       },
       {
-        "name": "pace_predictor",
+        "name": "pace_predictor.md",
         "type": "file",
         "file_type": "markdown",
         "commit": "machine learning project",

@@ -1,9 +1,20 @@
-import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import { DirectoriesList } from "../../../components/directorieslist";
 import { structure } from "../../../constants";
 import Pdf from "./filetypes/Pdf";
+import { Button } from "../../../components/interactables";
+import MarkdownFile from "./filetypes/MarkdownFile";
+import { useFile } from "../../../hooks";
+import { useEffect } from "react";
+
+const FileNotSupported = () => {
+  return (
+    <div className="p-10">
+      <h1 className="text-xl font-bold text-secondary">File not supported</h1>
+    </div>
+  );
+};
 
 const Header = () => {
   return (
@@ -21,68 +32,39 @@ const Header = () => {
 };
 
 const File = () => {
-  const [copyImage, setCopyImage] = useState("/assets/copy.svg");
+  const {
+    dimensions,
+    getPath,
+    copyImage,
+    copyImageClick,
+    getItem,
+    getFile,
+    fileContents,
+    setFileContents,
+    download,
+  } = useFile();
+
   const location = useLocation();
-  const headerHeight = 42.5;
-
-  const [dimensions, setDimensions] = useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
-  });
-
-  useEffect(() => {
-    function handleResize() {
-      setDimensions({
-        height: window.innerHeight,
-        width: window.innerWidth,
-      });
-    }
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  });
-
-  let path = [location.pathname];
-  if (path[0] !== "/main") {
-    path = location.pathname.split("/main/")[1].split("/");
-  }
+  const path = getPath(location.pathname);
   let curPath = "/main";
 
-  const handleCopyImage = () => {
-    setCopyImage("/assets/check.svg");
-    const timeoutId = setTimeout(() => {
-      setCopyImage("/assets/copy.svg");
-    }, 3000);
-
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  };
-
-  const getItem = (path: string[], structure: any) => {
-    if (path[0] === "/main") {
-      return structure;
-    }
-
-    if (path.length === 1) {
-      return structure.find((item: { name: string }) => item.name === path[0]);
-    }
-
-    const curPath = path[0];
-    const remainingPath = path.slice(1);
-
-    return getItem(
-      remainingPath,
-      structure.find((item: { name: string }) => item.name === curPath)
-        ?.contents,
-    );
-  };
+  const headerHeight = 42.5;
 
   const curItem = getItem(path, structure);
   if (!curItem) {
+    return;
+  }
+
+  useEffect(() => {
+    const fetchFile = async () => {
+      const file = await getFile(curItem.name);
+      setFileContents(file);
+    };
+
+    fetchFile();
+  }, [curItem.name]);
+
+  if (!fileContents) {
     return;
   }
 
@@ -132,8 +114,7 @@ const File = () => {
             })}
             <button
               onClick={() => {
-                handleCopyImage();
-                navigator.clipboard.writeText(location.pathname.slice(6));
+                copyImageClick();
               }}
               className="flex size-7 items-center justify-center rounded-md hover:bg-gray-collapsehover"
             >
@@ -154,6 +135,15 @@ const File = () => {
             {path[0] === "/main" ? "initial commit" : curItem.commit}
           </h1>
         </div>
+        <h1 className="text-sm text-gray">
+          {curItem.date === "cur_date"
+            ? new Date().toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+              })
+            : curItem.date}
+        </h1>
       </div>
       {curItem.type === "folder" || path[0] === "/main" ? (
         <DirectoriesList
@@ -169,13 +159,36 @@ const File = () => {
           <ul className="size-full divide-y-[1px] divide-gray-border rounded-md border-[1px] border-gray-border">
             <li
               key={0}
-              className={`flex h-[${headerHeight}px] flex-row items-center rounded-t-md bg-primary-200 px-3`}
-            ></li>
-            <Pdf
-              key={1}
-              filePath={"/Resume.pdf"}
-              height={dimensions.height - headerHeight}
-            />
+              className={`flex h-[${headerHeight}px] flex-row items-center justify-between rounded-t-md bg-primary-200 px-3`}
+            >
+              <h1 className="text-sm font-bold text-secondary">Preview</h1>
+              <Button
+                onClick={() => {
+                  download(curItem.name);
+                }}
+                imagePath="/assets/download.svg"
+                imageAltText="download"
+                imageStyles="size-4"
+                height={28}
+                buttonStyles="px-[5px]"
+              />
+            </li>
+            <li key={1}>
+              {curItem.type === "file" ? (
+                curItem.file_type === "pdf" ? (
+                  <Pdf
+                    filePath={`/${curItem.name}`}
+                    height={dimensions.height - headerHeight}
+                  />
+                ) : curItem.file_type === "markdown" ? (
+                  <MarkdownFile file={fileContents} styles="mx-40" />
+                ) : (
+                  <FileNotSupported />
+                )
+              ) : (
+                <FileNotSupported />
+              )}
+            </li>
           </ul>
         </div>
       )}

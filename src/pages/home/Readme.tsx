@@ -1,7 +1,5 @@
-import Markdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-
 import { markdown } from "../../constants";
+import { MarkdownFile } from "../files";
 
 const Readme = () => {
   return (
@@ -12,11 +10,7 @@ const Readme = () => {
           <h1 className="text-sm font-bold text-secondary">README</h1>
         </div>
       </div>
-      <Markdown
-        children={markdown}
-        remarkPlugins={[remarkGfm]}
-        className="markdown mx-8 text-secondary"
-      />
+      <MarkdownFile file={markdown} />
     </div>
   );
 };

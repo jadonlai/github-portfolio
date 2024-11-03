@@ -143,7 +143,7 @@ import remarkGfm from "remark-gfm";
 const markdown = `Just a link: www.nasa.gov.`;
 
 createRoot(document.body).render(
-  <Markdown remarkPlugins={[remarkGfm]}>{markdown}</Markdown>
+  <Markdown remarkPlugins={[remarkGfm]}>{markdown}</Markdown>,
 );
 ```
 
@@ -219,11 +219,11 @@ import type { Element } from "hast";
 type Components = Partial<{
   [TagName in keyof JSX.IntrinsicElements]:  // Class component:
     | (new (
-        props: JSX.IntrinsicElements[TagName] & ExtraProps
+        props: JSX.IntrinsicElements[TagName] & ExtraProps,
       ) => JSX.ElementClass)
     // Function component:
     | ((
-        props: JSX.IntrinsicElements[TagName] & ExtraProps
+        props: JSX.IntrinsicElements[TagName] & ExtraProps,
       ) => JSX.Element | string | null | undefined)
     // Tag name:
     | keyof JSX.IntrinsicElements;
@@ -323,7 +323,7 @@ A table:
 `;
 
 createRoot(document.body).render(
-  <Markdown remarkPlugins={[remarkGfm]}>{markdown}</Markdown>
+  <Markdown remarkPlugins={[remarkGfm]}>{markdown}</Markdown>,
 );
 ```
 
@@ -383,7 +383,7 @@ const markdown = "This ~is not~ strikethrough, but ~~this is~~!";
 createRoot(document.body).render(
   <Markdown remarkPlugins={[[remarkGfm, { singleTilde: false }]]}>
     {markdown}
-  </Markdown>
+  </Markdown>,
 );
 ```
 
@@ -445,7 +445,7 @@ createRoot(document.body).render(
         );
       },
     }}
-  />
+  />,
 );
 ```
 
@@ -487,7 +487,7 @@ const markdown = `The lift coefficient ($C_L$) is a dimensionless coefficient.`;
 createRoot(document.body).render(
   <Markdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
     {markdown}
-  </Markdown>
+  </Markdown>,
 );
 ```
 
@@ -610,7 +610,7 @@ Some *emphasis* and <strong>strong</strong>!
 </div>`;
 
 createRoot(document.body).render(
-  <Markdown rehypePlugins={[rehypeRaw]}>{markdown}</Markdown>
+  <Markdown rehypePlugins={[rehypeRaw]}>{markdown}</Markdown>,
 );
 ```
 
