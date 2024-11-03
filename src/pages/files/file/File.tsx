@@ -6,7 +6,7 @@ import Pdf from "./filetypes/Pdf";
 import { Button } from "../../../components/interactables";
 import MarkdownFile from "./filetypes/MarkdownFile";
 import { useFile } from "../../../hooks";
-import { useEffect } from "react";
+import Video from "./filetypes/Video";
 
 const FileNotSupported = () => {
   return (
@@ -32,17 +32,8 @@ const Header = () => {
 };
 
 const File = () => {
-  const {
-    dimensions,
-    getPath,
-    copyImage,
-    copyImageClick,
-    getItem,
-    getFile,
-    fileContents,
-    setFileContents,
-    download,
-  } = useFile();
+  const { dimensions, getPath, copyImage, copyImageClick, getItem, download } =
+    useFile();
 
   const location = useLocation();
   const path = getPath(location.pathname);
@@ -52,19 +43,6 @@ const File = () => {
 
   const curItem = getItem(path, structure);
   if (!curItem) {
-    return;
-  }
-
-  useEffect(() => {
-    const fetchFile = async () => {
-      const file = await getFile(curItem.name);
-      setFileContents(file);
-    };
-
-    fetchFile();
-  }, [curItem.name]);
-
-  if (!fileContents) {
     return;
   }
 
@@ -173,15 +151,20 @@ const File = () => {
                 buttonStyles="px-[5px]"
               />
             </li>
-            <li key={1}>
+            <li key={1} className="flex justify-center">
               {curItem.type === "file" ? (
                 curItem.file_type === "pdf" ? (
                   <Pdf
-                    filePath={`/${curItem.name}`}
+                    filename={curItem.name}
                     height={dimensions.height - headerHeight}
                   />
                 ) : curItem.file_type === "markdown" ? (
-                  <MarkdownFile file={fileContents} styles="mx-40" />
+                  <MarkdownFile filename={curItem.name} styles="mx-40" />
+                ) : curItem.file_type === "video" ? (
+                  <Video
+                    filename={curItem.name}
+                    height={dimensions.height - headerHeight}
+                  />
                 ) : (
                   <FileNotSupported />
                 )

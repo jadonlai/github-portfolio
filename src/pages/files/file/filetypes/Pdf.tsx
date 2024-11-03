@@ -1,12 +1,12 @@
 interface PdfProps {
-  filePath: string;
+  filename: string;
   height: number;
 }
 
-const Pdf = ({ filePath, height }: PdfProps) => {
+const Pdf = ({ filename, height }: PdfProps) => {
   return (
     <iframe
-      src={filePath}
+      src={`/portfolio/${filename}`}
       width="100%"
       height={`${height}px`}
       className="rounded-b-md"

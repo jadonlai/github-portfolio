@@ -1,4 +1,3 @@
-import { markdown } from "../../constants";
 import { MarkdownFile } from "../files";
 
 const Readme = () => {
@@ -10,7 +9,7 @@ const Readme = () => {
           <h1 className="text-sm font-bold text-secondary">README</h1>
         </div>
       </div>
-      <MarkdownFile file={markdown} />
+      <MarkdownFile filename="README.md" />
     </div>
   );
 };

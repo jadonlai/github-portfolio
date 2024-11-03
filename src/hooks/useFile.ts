@@ -66,11 +66,19 @@ const useFile = () => {
     );
   };
 
-  const getFile = async (file: string) => {
+  const getFile = async (file: string, type: string) => {
     try {
-      const response = await fetch(`/src/constants/${file}`);
-      const content = response.text();
-      return content;
+      const response = await fetch(file);
+      if (type === "markdown") {
+        const content = response.text();
+        return content;
+      } else if (type === "video") {
+        const blob = await response.blob();
+        const url = URL.createObjectURL(blob);
+        return url;
+      } else {
+        throw Error;
+      }
     } catch (error) {
       console.error(`getFile: ${error}`);
       return null;

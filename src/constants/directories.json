@@ -19,7 +19,7 @@
             "date": "2024"
           },
           {
-            "name": "demo",
+            "name": "ai4sar_demo.mp4",
             "type": "file",
             "file_type": "video",
             "commit": "demonstration video of the public transit search widget in use",
@@ -56,7 +56,7 @@
             "date": "present"
           },
           {
-            "name": "demo",
+            "name": "evros_demo.mp4",
             "type": "file",
             "file_type": "video",
             "commit": "demonstration video of the app in use",
@@ -106,7 +106,7 @@
             "date": "2024",
             "contents": [
               {
-                "name": "demo",
+                "name": "wikipedia_demo.mp4",
                 "type": "file",
                 "file_type": "video",
                 "commit": "video demo of the solver in use",

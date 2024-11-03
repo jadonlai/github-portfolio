@@ -5,6 +5,7 @@ import FolderDisplay from "./sidebar/FolderDisplay";
 import MarkdownFile from "./file/filetypes/MarkdownFile";
 import Pdf from "./file/filetypes/Pdf";
 import Sidebar from "./sidebar/Sidebar";
+import Video from "./file/filetypes/Video";
 
 export {
   Sidebar,
@@ -14,4 +15,5 @@ export {
   FolderDisplay,
   MarkdownFile,
   Pdf,
+  Video,
 };
