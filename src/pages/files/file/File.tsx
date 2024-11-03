@@ -1,13 +1,49 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import { DirectoriesList } from "../../../components/directorieslist";
 import { structure } from "../../../constants";
-import FileContent from "./FileContent";
+import Pdf from "./filetypes/Pdf";
+
+const Header = () => {
+  return (
+    <div
+      style={{
+        gridTemplateColumns: "1fr 1.5fr 1fr",
+      }}
+      className="grid w-full grid-cols-3 justify-between truncate text-xs font-bold text-gray"
+    >
+      <h1>Name</h1>
+      <h1>Description</h1>
+      <h1 className="text-right">Timeframe</h1>
+    </div>
+  );
+};
 
 const File = () => {
   const [copyImage, setCopyImage] = useState("/assets/copy.svg");
   const location = useLocation();
+  const headerHeight = 42.5;
+
+  const [dimensions, setDimensions] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
+
+  useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
 
   let path = [location.pathname];
   if (path[0] !== "/main") {
@@ -121,18 +157,7 @@ const File = () => {
       </div>
       {curItem.type === "folder" || path[0] === "/main" ? (
         <DirectoriesList
-          topItem={
-            <div
-              style={{
-                gridTemplateColumns: "1fr 1fr 1fr",
-              }}
-              className="grid w-full grid-cols-3 justify-between truncate text-xs font-bold text-gray"
-            >
-              <h1>Name</h1>
-              <h1>Description</h1>
-              <h1 className="text-right">Timeframe</h1>
-            </div>
-          }
+          topItem={<Header />}
           topItemStyles="h-[40px] px-4"
           items={
             path[0] === "/main" ? curItem : [backItem, ...curItem.contents]
@@ -140,7 +165,19 @@ const File = () => {
           basePath={path[0] === "/main" ? "" : path.join("/")}
         />
       ) : (
-        <FileContent />
+        <div className={`mb-10 mt-4 h-[${dimensions.height}px]`}>
+          <ul className="size-full divide-y-[1px] divide-gray-border rounded-md border-[1px] border-gray-border">
+            <li
+              key={0}
+              className={`flex h-[${headerHeight}px] flex-row items-center rounded-t-md bg-primary-200 px-3`}
+            ></li>
+            <Pdf
+              key={1}
+              filePath={"/Resume.pdf"}
+              height={dimensions.height - headerHeight}
+            />
+          </ul>
+        </div>
       )}
     </div>
   );

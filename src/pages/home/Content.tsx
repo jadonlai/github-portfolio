@@ -3,24 +3,43 @@ import { DirectoriesList } from "../../components/directorieslist";
 import Readme from "./Readme";
 import { structure } from "../../constants";
 
+interface HeadeTagProps {
+  image: string;
+  text: string;
+  styles?: string;
+}
+
+const HeaderTag = ({ image, text, styles }: HeadeTagProps) => {
+  return (
+    <div className={`flex flex-row items-center space-x-1 ${styles}`}>
+      <img src={`/assets/${image}.svg`} alt={image} className="size-4" />
+      <p className="truncate text-sm text-gray">{text}</p>
+    </div>
+  );
+};
+
 const Header = () => {
   return (
-    <div className="flex flex-row items-center space-x-2">
-      <img
-        src="/assets/profile.png"
-        alt="profile"
-        className="size-5 rounded-full border-[1px] border-gray-border"
-      />
-      <button
-        onClick={() => {
-          window.open("https://github.com/jadonlai", "_blank");
-        }}
-      >
-        <h1 className="text-sm font-bold text-secondary hover:underline">
-          jadonlai
-        </h1>
-      </button>
-      <p className="text-sm text-gray">fixed bug</p>
+    <div className="flex flex-row items-center space-x-4">
+      <div className="flex flex-row items-center space-x-2">
+        <img
+          src="/assets/profile.png"
+          alt="profile"
+          className="size-5 rounded-full border-[1px] border-gray-border"
+        />
+        <button
+          onClick={() => {
+            window.open("https://github.com/jadonlai", "_blank");
+          }}
+        >
+          <h1 className="text-sm font-bold text-secondary hover:underline">
+            jadonlai
+          </h1>
+        </button>
+      </div>
+      <HeaderTag image="branch" text="Software Developer" />
+      <HeaderTag image="star" text="AI/ML and Full Stack Specialist" />
+      <HeaderTag image="location_pin" text="San Luis Obispo, CA" />
     </div>
   );
 };

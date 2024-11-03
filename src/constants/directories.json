@@ -14,12 +14,14 @@
           {
             "name": "overview",
             "type": "file",
+            "file_type": "markdown",
             "commit": "initial commit",
             "date": "2024"
           },
           {
             "name": "demo",
             "type": "file",
+            "file_type": "video",
             "commit": "demonstration video of the public transit search widget in use",
             "date": "2024"
           }
@@ -28,6 +30,7 @@
       {
         "name": "xc_assistant_coach",
         "type": "file",
+        "file_type": "markdown",
         "commit": "slo high school cross country",
         "date": "2023 - present"
       }
@@ -48,12 +51,14 @@
           {
             "name": "overview",
             "type": "file",
+            "file_type": "markdown",
             "commit": "initial commit",
             "date": "present"
           },
           {
             "name": "demo",
             "type": "file",
+            "file_type": "video",
             "commit": "demonstration video of the app in use",
             "date": "present"
           }
@@ -68,12 +73,14 @@
           {
             "name": "overview",
             "type": "file",
+            "file_type": "markdown",
             "commit": "initial commit",
             "date": "present"
           },
           {
             "name": "demo",
             "type": "file",
+            "file_type": "photos",
             "commit": "photos of current progress in the engine",
             "date": "present"
           }
@@ -88,6 +95,7 @@
           {
             "name": "overview",
             "type": "file",
+            "file_type": "markdown",
             "commit": "initial commit",
             "date": "2024"
           },
@@ -100,12 +108,14 @@
               {
                 "name": "demo",
                 "type": "file",
+                "file_type": "video",
                 "commit": "video demo of the solver in use",
                 "date": "2024"
               },
               {
                 "name": "graphs",
                 "type": "file",
+                "file_type": "photos",
                 "commit": "graphs of the solver performance and results",
                 "date": "2024"
               }
@@ -122,12 +132,14 @@
           {
             "name": "overview",
             "type": "file",
+            "file_type": "markdown",
             "commit": "initial commit",
             "date": "2024"
           },
           {
             "name": "product",
             "type": "file",
+            "file_type": "markdown",
             "commit": "description of the file system's features",
             "date": "2024"
           }
@@ -142,12 +154,14 @@
           {
             "name": "overview",
             "type": "file",
+            "file_type": "markdown",
             "commit": "initial commit",
             "date": "2024"
           },
           {
             "name": "results",
             "type": "file",
+            "file_type": "markdown",
             "commit": "documentation of the results",
             "date": "2024"
           }
@@ -156,6 +170,7 @@
       {
         "name": "pace_predictor",
         "type": "file",
+        "file_type": "markdown",
         "commit": "machine learning project",
         "date": "2020"
       }
@@ -164,13 +179,15 @@
   {
     "name": "README.md",
     "type": "file",
-    "commit": "initial commit",
-    "date": "2022-01-01"
+    "file_type": "markdown",
+    "commit": "essentials of my portfolio",
+    "date": "cur_date"
   },
   {
     "name": "resume.pdf",
     "type": "file",
-    "commit": "initial commit",
-    "date": "2022-01-01"
+    "file_type": "pdf",
+    "commit": "seeking employment!",
+    "date": "cur_date"
   }
 ]
