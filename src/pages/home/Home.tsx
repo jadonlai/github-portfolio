@@ -9,7 +9,7 @@ const Home = () => {
       <Navbar />
       <div className="mx-auto h-full w-[72.5%]">
         <Title />
-        <div className="mt-6 flex h-full flex-row space-x-5">
+        <div className="mb-10 mt-6 flex h-full flex-row space-x-5">
           <Content />
           <SideContent />
         </div>

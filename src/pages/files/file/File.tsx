@@ -16,6 +16,16 @@ const FileNotSupported = () => {
   );
 };
 
+const FileInProgress = () => {
+  return (
+    <div className="p-10">
+      <h1 className="text-xl font-bold text-secondary">
+        File currently in progress!
+      </h1>
+    </div>
+  );
+};
+
 const Header = () => {
   return (
     <div
@@ -165,6 +175,8 @@ const File = () => {
                     filename={curItem.name}
                     height={dimensions.height - headerHeight}
                   />
+                ) : curItem.file_type === "photos" ? (
+                  <FileInProgress />
                 ) : (
                   <FileNotSupported />
                 )

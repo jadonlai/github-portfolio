@@ -29,7 +29,21 @@ export default {
         "blue-tag": "var(--blue-tag)",
         "blue-taghover": "var(--blue-taghover)",
       },
+      typography: () => ({
+        DEFAULT: {
+          css: {
+            "--tw-prose-body": "var(--gray)",
+            "--tw-prose-headings": "var(--secondary)",
+            "--tw-prose-lead": "var(--secondary)",
+            "--tw-prose-links": "var(--secondary)",
+            "--tw-prose-bold": "var(--secondary)",
+            "--tw-prose-counters": "var(--secondary)",
+            "--tw-prose-bullets": "var(--secondary)",
+            "--tw-prose-hr": "var(--gray-border)",
+          },
+        },
+      }),
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

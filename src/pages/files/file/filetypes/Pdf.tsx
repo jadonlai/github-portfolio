@@ -6,10 +6,10 @@ interface PdfProps {
 const Pdf = ({ filename, height }: PdfProps) => {
   return (
     <iframe
-      src={`/portfolio/${filename}`}
+      src={`/portfolio/${filename}#toolbar=0`}
       width="100%"
       height={`${height}px`}
-      className="rounded-b-md"
+      className="overflow-hidden rounded-b-md"
     />
   );
 };

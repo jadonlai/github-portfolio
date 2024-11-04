@@ -10,8 +10,16 @@ body {
   @apply transition-colors duration-150;
 }
 
-.markdown > * {
-  all: revert;
+.prose-img {
+  @apply prose-img:size-6 prose-img:mt-0 prose-img:mb-1 prose-img:mx-2 prose-img:inline;
+}
+
+.prose-a {
+  @apply hover:prose-a:text-blue;
+}
+
+.prose-hr {
+  @apply prose-hr:my-4;
 }
 
 .dark {

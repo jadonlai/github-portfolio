@@ -14,6 +14,7 @@ const Directories = () => {
       setOpenFolders([...openFolders, folder]);
     }
   };
+
   const renderStructure = (item: {
     name: string;
     type: string;

@@ -100,26 +100,18 @@
             "date": "2024"
           },
           {
-            "name": "results",
-            "type": "folder",
-            "commit": "graphs and video demo of the solver",
-            "date": "2024",
-            "contents": [
-              {
-                "name": "wikipedia_demo.mp4",
-                "type": "file",
-                "file_type": "video",
-                "commit": "video demo of the solver in use",
-                "date": "2024"
-              },
-              {
-                "name": "graphs",
-                "type": "file",
-                "file_type": "photos",
-                "commit": "graphs of the solver performance and results",
-                "date": "2024"
-              }
-            ]
+            "name": "wikipedia_game_solver_paper.pdf",
+            "type": "file",
+            "file_type": "pdf",
+            "commit": "project report on game-solving techniques and algorithmic analysis",
+            "date": "2024"
+          },
+          {
+            "name": "wikipedia_demo.mp4",
+            "type": "file",
+            "file_type": "video",
+            "commit": "video demo of the solver in use",
+            "date": "2024"
           }
         ]
       },
@@ -159,9 +151,9 @@
             "date": "2024"
           },
           {
-            "name": "cars_results.md",
+            "name": "cars_paper.pdf",
             "type": "file",
-            "file_type": "markdown",
+            "file_type": "pdf",
             "commit": "documentation of the results",
             "date": "2024"
           }

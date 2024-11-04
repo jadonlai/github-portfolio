@@ -24,7 +24,7 @@ const useFile = () => {
   }, []);
 
   const getPath = (path: string) => {
-    if (path[0] === "/main") {
+    if (path === "/main") {
       return [path];
     }
 

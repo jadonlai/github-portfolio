@@ -9,7 +9,9 @@ const Readme = () => {
           <h1 className="text-sm font-bold text-secondary">README</h1>
         </div>
       </div>
-      <MarkdownFile filename="README.md" />
+      <div className="flex justify-center">
+        <MarkdownFile filename="README.md" />
+      </div>
     </div>
   );
 };

@@ -26,10 +26,14 @@ const MarkdownFile = ({ filename, styles }: MarkdownProps) => {
 
   return (
     <Markdown
-      children={fileContents}
       remarkPlugins={[remarkGfm]}
-      className={`markdown mx-8 text-secondary ${styles}`}
-    />
+      components={{
+        a: ({ node, ...props }) => <a {...props} target="_blank" />,
+      }}
+      className={`prose prose-a prose-img prose-hr m-8 max-w-none ${styles}`}
+    >
+      {fileContents}
+    </Markdown>
   );
 };
 
