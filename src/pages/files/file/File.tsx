@@ -16,16 +16,6 @@ const FileNotSupported = () => {
   );
 };
 
-const FileInProgress = () => {
-  return (
-    <div className="p-10">
-      <h1 className="text-xl font-bold text-secondary">
-        File currently in progress!
-      </h1>
-    </div>
-  );
-};
-
 const Header = () => {
   return (
     <div className="grid w-full grid-cols-3 justify-between truncate text-xs font-bold text-gray sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
