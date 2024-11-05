@@ -12,7 +12,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
 
 ## 📝 Experience
 
-### 🛠 [**AI for Search and Rescue**](./main/experience/ai_for_sar) (2024)
+### 🛠 [**AI for Search and Rescue**](/github-portfolio/main/experience/ai_for_sar) (2024)
 
 - **Overview:** Spearheaded developing AI tools for optimizing search and rescue operations, including a public transit search widget.
 - **Technologies:** Tensorflow, Sci-Kit Learn, Python, Numpy, Pandas, Folium
@@ -23,7 +23,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
   - Writing and designing maintainable code
   - Ability to dynamically learn new technologies and AI techniques
 
-### 🏃 [**Cross Country Coach**](./main/experience/xc_assistant_coach.md) (2023 - Present)
+### 🏃 [**Cross Country Coach**](/github-portfolio/main/experience/xc_assistant_coach.md) (2023 - Present)
 
 - **Role:** Coaching high school cross-country/track-and-field athletes at SLO High School
 - **Skills:**
@@ -36,7 +36,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
 
 ## 🚀 Projects
 
-### 📱 [**Evros**](./main/projects/evros) (Present)
+### 📱 [**Evros**](/github-portfolio/main/projects/evros) (Present)
 
 - **Overview:** Creating a cross-country full-stack mobile app. Set to be released by 2025.
 - **Technologies:** React Native, Javascript, Appwrite, Expo
@@ -48,7 +48,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
   - Synced race stopwatch for each team
   - Collaborative calendar for each team
 
-### 🔲 [**2D Physics Engine**](./main/projects/physics_engine) (Present)
+### 🔲 [**2D Physics Engine**](/github-portfolio/main/projects/physics_engine) (Present)
 
 - **Overview:** Building a 2D rigid body physics engine from scratch.
 - **Technologies:** C#, C++, MonoGame, SFML
@@ -58,7 +58,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
 
 [![GitHub](/github-portfolio/assets/github.svg)](https://github.com/jadonlai/physics-engine-csharp) C# &emsp; [![GitHub](/github-portfolio/public/assets/github.svg)](https://github.com/jadonlai/physics-engine-cplusplus) C++
 
-### 🌐 [**Wikipedia Game Solver**](./main/projects/wikipedia_game_solver) (2024)
+### 🌐 [**Wikipedia Game Solver**](/github-portfolio/main/projects/wikipedia_game_solver) (2024)
 
 - **Overview:** Analyzed AI algorithms for solving the "Wikipedia Game" using BFS, DFS, GBFS, and A\*.
 - **Technologies:** Python, Wikipedia API, Sentence Transformers
@@ -66,7 +66,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
 
 [![GitHub](/github-portfolio/public/assets/github.svg)](https://github.com/jadonlai/wikipedia-game-solver) GitHub
 
-### 🗂 [**Tiny File System**](.main//projects/tfs) (2024)
+### 🗂 [**Tiny File System**](/github-portfolio/main/projects/tfs) (2024)
 
 - **Overview:** Designed a custom file system mountable on Unix systems.
 - **Technologies:** C, Unix File System
@@ -78,7 +78,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
 
 [![GitHub](/github-portfolio/public/assets/github.svg)](https://github.com/jadonlai/tiny-fs) GitHub
 
-### 🚗 [**Data Science for Cars**](./main/projects/data_science_for_cars) (2024)
+### 🚗 [**Data Science for Cars**](/github-portfolio/main/projects/data_science_for_cars) (2024)
 
 - **Overview:** Conducted data analysis on used cars to assist college students in purchasing decisions
 - **Technologies:** Python, Google Colab
@@ -97,7 +97,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
 
 ## 📄 Resume
 
-Check out my full [resume](./main/resume.pdf) for more information!
+Check out my full [resume](/github-portfolio/main/resume.pdf) for more information!
 
 ---
 
