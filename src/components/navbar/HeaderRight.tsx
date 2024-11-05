@@ -7,7 +7,7 @@ const HeaderRight = () => {
         }}
       >
         <img
-          src="/assets/profile.png"
+          src="/github-portfolio/assets/profile.png"
           alt="profile"
           className="size-8 rounded-full border-[1px] border-gray-border"
         />

@@ -91,10 +91,18 @@ const File = () => {
               }}
               className="flex size-7 items-center justify-center rounded-md hover:bg-gray-collapsehover"
             >
-              {copyImage === "/assets/copy.svg" ? (
-                <img src="/assets/copy.svg" alt="copy" className="size-4" />
+              {copyImage === "/github-portfolio/assets/copy.svg" ? (
+                <img
+                  src="/github-portfolio/assets/copy.svg"
+                  alt="copy"
+                  className="size-4"
+                />
               ) : (
-                <img src="/assets/check.svg" alt="check" className="size-4" />
+                <img
+                  src="/github-portfolio/assets/check.svg"
+                  alt="check"
+                  className="size-4"
+                />
               )}
             </button>
           </div>
@@ -102,7 +110,11 @@ const File = () => {
       </div>
       <div className="flex w-full flex-row items-center justify-between rounded-md border-[1px] border-gray-border p-3">
         <div className="flex flex-row items-center">
-          <img src="/assets/logo.png" alt="logo" className="mr-2 size-5" />
+          <img
+            src="/github-portfolio/assets/logo.png"
+            alt="logo"
+            className="mr-2 size-5"
+          />
           <h1 className="text-sm font-bold text-secondary">jadonlai</h1>
           <h1 className="truncate whitespace-nowrap px-2 text-sm text-gray">
             {path[0] === "/main" ? "initial commit" : curItem.commit}
@@ -137,9 +149,12 @@ const File = () => {
               <h1 className="text-sm font-bold text-secondary">Preview</h1>
               <Button
                 onClick={() => {
-                  download(`/portfolio${location.pathname}`, curItem.name);
+                  download(
+                    `/github-portfolio/portfolio${location.pathname}`,
+                    curItem.name,
+                  );
                 }}
-                imagePath="/assets/download.svg"
+                imagePath="/github-portfolio/assets/download.svg"
                 imageAltText="download"
                 imageStyles="size-4"
                 height={28}
@@ -150,17 +165,17 @@ const File = () => {
               {curItem.type === "file" ? (
                 curItem.file_type === "pdf" ? (
                   <Pdf
-                    filepath={`/portfolio${location.pathname}`}
+                    filepath={`/github-portfolio/portfolio${location.pathname}`}
                     height={dimensions.height - headerHeight}
                   />
                 ) : curItem.file_type === "markdown" ? (
                   <MarkdownFile
-                    filepath={`/portfolio${location.pathname}`}
+                    filepath={`/github-portfolio/portfolio${location.pathname}`}
                     styles="mx-40"
                   />
                 ) : curItem.file_type === "video" ? (
                   <Video
-                    filepath={`/portfolio${location.pathname}`}
+                    filepath={`/github-portfolio/portfolio${location.pathname}`}
                     height={dimensions.height - headerHeight}
                     orientation={curItem.orientation}
                   />

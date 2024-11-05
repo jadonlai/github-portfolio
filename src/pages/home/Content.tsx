@@ -9,19 +9,19 @@ const Header = () => {
       <div className="flex flex-row items-center space-x-3">
         <Button
           onClick={() => {}}
-          imagePath="/assets/branch.svg"
+          imagePath="/github-portfolio/assets/branch.svg"
           imageAltText="branch"
           text="main"
           buttonStyles="hover:bg-gray-100 hover:cursor-default"
         />
         <div className="hidden flex-row space-x-3 md:flex lg:flex">
           <div className="flex flex-row items-center space-x-1">
-            <img src="/assets/branch.svg" alt="branch" />
+            <img src="/github-portfolio/assets/branch.svg" alt="branch" />
             <h1 className="text-sm font-bold text-secondary">1</h1>
             <h1 className="text-sm text-gray">Branch</h1>
           </div>
           <div className="flex flex-row items-center space-x-1">
-            <img src="/assets/tags.svg" alt="tags" />
+            <img src="/github-portfolio/assets/tags.svg" alt="tags" />
             <h1 className="text-sm text-gray">Tags</h1>
           </div>
         </div>
@@ -35,7 +35,7 @@ const Header = () => {
               "_blank",
             )
           }
-          imagePath="/assets/code_secondary.svg"
+          imagePath="/github-portfolio/assets/code_secondary.svg"
           imageAltText="code"
           text="Code"
           textStyles={
@@ -58,7 +58,11 @@ interface ContentHeaderTagProps {
 const ContentHeaderTag = ({ image, text, styles }: ContentHeaderTagProps) => {
   return (
     <div className={`flex flex-row items-center space-x-1 ${styles}`}>
-      <img src={`/assets/${image}.svg`} alt={image} className="size-4" />
+      <img
+        src={`/github-portfolio/assets/${image}.svg`}
+        alt={image}
+        className="size-4"
+      />
       <p className="whitespace-nowrap text-sm text-gray">{text}</p>
     </div>
   );
@@ -69,7 +73,7 @@ const ContentHeader = () => {
     <div className="flex flex-row items-center space-x-4">
       <div className="flex flex-row items-center space-x-2">
         <img
-          src="/assets/profile.png"
+          src="/github-portfolio/assets/profile.png"
           alt="profile"
           className="size-5 rounded-full border-[1px] border-gray-border"
         />

@@ -11,12 +11,16 @@ const HeaderLeft = () => {
           setMode(newMode);
           document.body.classList.replace(mode, newMode);
         }}
-        imagePath={`/assets/${mode}.svg`}
+        imagePath={`/github-portfolio/assets/${mode}.svg`}
         imageAltText={mode}
         imageStyles="size-4"
         buttonStyles="px-1.5 bg-primary-100 mr-2"
       /> */}
-      <img src="/assets/logo.png" alt="logo" className="size-8" />
+      <img
+        src="/github-portfolio/assets/logo.png"
+        alt="logo"
+        className="size-8"
+      />
       <div className="ml-4 flex flex-row items-center">
         <button
           onClick={() => {

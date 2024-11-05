@@ -29,7 +29,7 @@ const DirectoriesList = ({
         items.map((item, index) => (
           <Item
             key={item.name}
-            imagePath={`/assets/${item.type}.svg`}
+            imagePath={`/github-portfolio/assets/${item.type}.svg`}
             imageAltText={item.type}
             name={item.name}
             routePath={

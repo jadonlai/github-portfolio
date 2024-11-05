@@ -6,7 +6,7 @@ const Sidebar = () => {
     <div className="h-full w-[320px] p-4">
       <div className="flex flex-row items-center space-x-2">
         <Button
-          imagePath="/assets/collapse.svg"
+          imagePath="/github-portfolio/assets/collapse.svg"
           imageAltText="collapse"
           onClick={() => {}}
           buttonStyles="border-none bg-gray-collapseopen hover:bg-gray-collapsehover"
@@ -15,13 +15,13 @@ const Sidebar = () => {
       </div>
       <div className="mt-4 flex flex-row items-center justify-between">
         <Button
-          imagePath="/assets/branch.svg"
+          imagePath="/github-portfolio/assets/branch.svg"
           imageAltText="branch"
           text="main"
           onClick={() => {}}
         />
         <Button
-          imagePath="/assets/search.svg"
+          imagePath="/github-portfolio/assets/search.svg"
           imageAltText="search"
           onClick={() => {}}
         />
