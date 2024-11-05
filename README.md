@@ -1,4 +1,4 @@
-<img src="/public/assets/logo.png" alt="logo" class="size-4" />
+<img src="/public/assets/logo.png" alt="logo" className="size-4" />
 
 This is a [React](https://react.dev/) project, created with [`vite`](https://vite.dev/).
 
