@@ -1,11 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import structure from "../../../constants/directories.json";
 import FileDisplay from "./FileDisplay";
 import FolderDisplay from "./FolderDisplay";
+import { useFile } from "../../../hooks";
+import { useLocation } from "react-router-dom";
 
 const Directories = () => {
+  const { getPath } = useFile();
+  const location = useLocation();
   const [openFolders, setOpenFolders] = useState<string[]>([]);
+
+  useEffect(() => {
+    const path = getPath(location.pathname);
+    setOpenFolders((prev) => [...new Set([...prev, ...path])]);
+  }, [location]);
 
   const handleFolderClick = (folder: string) => {
     if (openFolders.includes(folder)) {
