@@ -1,6 +1,6 @@
 # 🧑‍💻 Jadon Lai
 
-<!-- ![headshot](/github-portfolio/public/assets/headshot.jpeg) -->
+![headshot](/github-portfolio/public/assets/headshot.jpeg)
 
 📍 **Location:** San Luis Obispo, CA  
 💼 **Seeking roles in:** Software Development  
