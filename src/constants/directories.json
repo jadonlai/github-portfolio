@@ -85,13 +85,6 @@
             "file_type": "markdown",
             "commit": "initial commit",
             "date": "present"
-          },
-          {
-            "name": "demo",
-            "type": "file",
-            "file_type": "photos",
-            "commit": "photos of current progress in the engine",
-            "date": "present"
           }
         ]
       },

@@ -174,8 +174,6 @@ const File = () => {
                     height={dimensions.height - headerHeight}
                     orientation={curItem.orientation}
                   />
-                ) : curItem.file_type === "photos" ? (
-                  <FileInProgress />
                 ) : (
                   <FileNotSupported />
                 )
