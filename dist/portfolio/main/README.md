@@ -1,6 +1,6 @@
 # 🧑‍💻 Jadon Lai
 
-<!-- ![headshot](/github-portfolio/public/assets/headshot.jpeg) -->
+![headshot](https://jadonlai.github.io/images/headshot.jpeg)
 
 📍 **Location:** San Luis Obispo, CA  
 💼 **Seeking roles in:** Software Development  
@@ -56,7 +56,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
   - Vectors
   - Rigid body classes
 
-[![GitHub](/github-portfolio/assets/github.svg)](https://github.com/jadonlai/physics-engine-csharp) C# &emsp; [![GitHub](/github-portfolio/public/assets/github.svg)](https://github.com/jadonlai/physics-engine-cplusplus) C++
+[![GitHub](https://jadonlai.github.io/images/github.svg)](https://github.com/jadonlai/physics-engine-csharp) C# &emsp; [![GitHub](https://jadonlai.github.io/images/github.svg)](https://github.com/jadonlai/physics-engine-cplusplus) C++
 
 ### 🌐 [**Wikipedia Game Solver**](/github-portfolio/main/projects/wikipedia_game_solver) (2024)
 
@@ -64,7 +64,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
 - **Technologies:** Python, Wikipedia API, Sentence Transformers
 - **Concepts:** Graph theory, GOFAI
 
-[![GitHub](/github-portfolio/public/assets/github.svg)](https://github.com/jadonlai/wikipedia-game-solver) GitHub
+[![GitHub](https://jadonlai.github.io/images/github.svg)](https://github.com/jadonlai/wikipedia-game-solver) GitHub
 
 ### 🗂 [**Tiny File System**](/github-portfolio/main/projects/tfs) (2024)
 
@@ -76,7 +76,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
   - Timestamps
   - Read/write permissions
 
-[![GitHub](/github-portfolio/public/assets/github.svg)](https://github.com/jadonlai/tiny-fs) GitHub
+[![GitHub](https://jadonlai.github.io/images/github.svg)](https://github.com/jadonlai/tiny-fs) GitHub
 
 ### 🚗 [**Data Science for Cars**](/github-portfolio/main/projects/data_science_for_cars) (2024)
 
@@ -84,7 +84,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
 - **Technologies:** Python, Google Colab
 - **Concepts:** KNN, KMeans, data science
 
-[![Code](/github-portfolio/public/assets/code.svg)](https://drive.google.com/drive/folders/1ZYxOVuBHhR4QYLnuqkXYIyV5d0nbkWRD) Code and files
+[![Code](https://jadonlai.github.io/images/code.svg)](https://drive.google.com/drive/folders/1ZYxOVuBHhR4QYLnuqkXYIyV5d0nbkWRD) Code and files
 
 ---
 
@@ -101,4 +101,4 @@ Check out my full [resume](/github-portfolio/main/resume.pdf) for more informati
 
 ---
 
-[![GitHub](/github-portfolio/public/assets/github.svg)](https://github.com/jadonlai) [![LinkedIn](/github-portfolio/public/assets/linkedin.svg)](https://www.linkedin.com/in/jadon-lai-16b550242/)
+[![GitHub](https://jadonlai.github.io/images/github.svg)](https://github.com/jadonlai) [![LinkedIn](https://jadonlai.github.io/images/linkedin.svg)](https://www.linkedin.com/in/jadon-lai-16b550242/)
