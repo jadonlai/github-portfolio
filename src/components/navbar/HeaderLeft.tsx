@@ -1,10 +1,7 @@
-import { useState } from "react";
-import { Button } from "../interactables";
-
 const HeaderLeft = () => {
-  const [mode, setMode] = useState(
-    document.body.classList.contains("dark") ? "dark" : "light",
-  );
+  // const [mode, setMode] = useState(
+  //   document.body.classList.contains("dark") ? "dark" : "light",
+  // );
 
   return (
     <div className="flex flex-row space-x-2">

@@ -1,4 +1,4 @@
-import { Button, Search } from "../../components/interactables";
+import { Button } from "../../components/interactables";
 import { DirectoriesList } from "../../components/directorieslist";
 import Readme from "./Readme";
 import { structure } from "../../constants";

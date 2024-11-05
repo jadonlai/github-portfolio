@@ -1,4 +1,4 @@
-import { Button, Search } from "../../../components/interactables";
+import { Button } from "../../../components/interactables";
 import Directories from "./Directories";
 
 const Sidebar = () => {
