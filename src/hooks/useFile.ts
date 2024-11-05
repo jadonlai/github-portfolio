@@ -85,10 +85,11 @@ const useFile = () => {
     }
   };
 
-  const download = (file: string) => {
+  const download = (filepath: string, filename: string) => {
     const link = document.createElement("a");
-    link.href = `/${file}`;
-    link.download = file;
+
+    link.href = `${filepath}`;
+    link.download = filename;
     link.click();
   };
 

@@ -10,7 +10,7 @@ const Readme = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <MarkdownFile filename="README.md" />
+        <MarkdownFile filepath="/portfolio/main/README.md" />
       </div>
     </div>
   );

@@ -4,21 +4,21 @@ import remarkGfm from "remark-gfm";
 import { useFile } from "../../../../hooks";
 
 interface MarkdownProps {
-  filename: string;
+  filepath: string;
   styles?: string;
 }
 
-const MarkdownFile = ({ filename, styles }: MarkdownProps) => {
+const MarkdownFile = ({ filepath, styles }: MarkdownProps) => {
   const { getFile, fileContents, setFileContents } = useFile();
 
   useEffect(() => {
     const fetchFile = async () => {
-      const file = await getFile(`/portfolio/${filename}`, "markdown");
+      const file = await getFile(filepath, "markdown");
       setFileContents(file);
     };
 
     fetchFile();
-  }, [filename]);
+  }, [filepath]);
 
   if (!fileContents) {
     return;

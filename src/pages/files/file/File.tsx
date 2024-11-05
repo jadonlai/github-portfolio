@@ -147,12 +147,12 @@ const File = () => {
           <ul className="size-full divide-y-[1px] divide-gray-border rounded-md border-[1px] border-gray-border">
             <li
               key={0}
-              className={`flex h-[${headerHeight}px] flex-row items-center justify-between rounded-t-md bg-primary-200 px-3`}
+              className={`flex flex-row items-center justify-between rounded-t-md bg-primary-200 px-3 py-2`}
             >
               <h1 className="text-sm font-bold text-secondary">Preview</h1>
               <Button
                 onClick={() => {
-                  download(curItem.name);
+                  download(`/portfolio${location.pathname}`, curItem.name);
                 }}
                 imagePath="/assets/download.svg"
                 imageAltText="download"
@@ -165,15 +165,19 @@ const File = () => {
               {curItem.type === "file" ? (
                 curItem.file_type === "pdf" ? (
                   <Pdf
-                    filename={curItem.name}
+                    filepath={`/portfolio${location.pathname}`}
                     height={dimensions.height - headerHeight}
                   />
                 ) : curItem.file_type === "markdown" ? (
-                  <MarkdownFile filename={curItem.name} styles="mx-40" />
+                  <MarkdownFile
+                    filepath={`/portfolio${location.pathname}`}
+                    styles="mx-40"
+                  />
                 ) : curItem.file_type === "video" ? (
                   <Video
-                    filename={curItem.name}
+                    filepath={`/portfolio${location.pathname}`}
                     height={dimensions.height - headerHeight}
+                    orientation={curItem.orientation}
                   />
                 ) : curItem.file_type === "photos" ? (
                   <FileInProgress />

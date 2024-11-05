@@ -14,6 +14,12 @@ body {
   @apply prose-img:size-6 prose-img:mt-0 prose-img:mb-1 prose-img:mx-2 prose-img:inline;
 }
 
+.prose-img img[src$=".jpeg"] {
+  height: 25%;
+  width: 25%;
+  margin: 0;
+}
+
 .prose-a {
   @apply hover:prose-a:text-blue;
 }

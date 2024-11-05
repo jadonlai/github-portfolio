@@ -19,9 +19,17 @@
             "date": "2024"
           },
           {
+            "name": "ai4sar_paper.pdf",
+            "type": "file",
+            "file_type": "pdf",
+            "commit": "project report on ai for search and rescue",
+            "date": "2024"
+          },
+          {
             "name": "ai4sar_demo.mp4",
             "type": "file",
             "file_type": "video",
+            "orientation": "landscape",
             "commit": "demonstration video of the public transit search widget in use",
             "date": "2024"
           }
@@ -59,6 +67,7 @@
             "name": "evros_demo.mp4",
             "type": "file",
             "file_type": "video",
+            "orientation": "portrait",
             "commit": "demonstration video of the app in use",
             "date": "present"
           }
@@ -110,6 +119,7 @@
             "name": "wikipedia_demo.mp4",
             "type": "file",
             "file_type": "video",
+            "orientation": "landscape",
             "commit": "video demo of the solver in use",
             "date": "2024"
           }
@@ -122,17 +132,10 @@
         "date": "2024",
         "contents": [
           {
-            "name": "tfs_overview",
+            "name": "tfs_overview.md",
             "type": "file",
             "file_type": "markdown",
             "commit": "initial commit",
-            "date": "2024"
-          },
-          {
-            "name": "tfs_product.md",
-            "type": "file",
-            "file_type": "markdown",
-            "commit": "description of the file system's features",
             "date": "2024"
           }
         ]
@@ -158,13 +161,6 @@
             "date": "2024"
           }
         ]
-      },
-      {
-        "name": "pace_predictor.md",
-        "type": "file",
-        "file_type": "markdown",
-        "commit": "machine learning project",
-        "date": "2020"
       }
     ]
   },
