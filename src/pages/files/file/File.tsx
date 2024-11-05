@@ -41,6 +41,16 @@ const File = () => {
     return;
   }
 
+  const curParent = getItem(
+    path.length > 1 ? path.slice(0, -1) : path,
+    structure,
+  );
+  if (!curParent) {
+    return;
+  }
+
+  console.log(curParent.github);
+
   const backItem = {
     name: "..",
     type: "folder",
@@ -147,19 +157,42 @@ const File = () => {
               className={`flex flex-row items-center justify-between rounded-t-md bg-primary-200 px-3 py-2`}
             >
               <h1 className="text-sm font-bold text-secondary">Preview</h1>
-              <Button
-                onClick={() => {
-                  download(
-                    `/github-portfolio/portfolio${location.pathname}`,
-                    curItem.name,
-                  );
-                }}
-                imagePath="/github-portfolio/assets/download.svg"
-                imageAltText="download"
-                imageStyles="size-4"
-                height={28}
-                buttonStyles="px-[5px]"
-              />
+              <div className="flex flex-row items-center space-x-2">
+                {curParent.github &&
+                  curParent.github.map((link: string, index: number) => {
+                    return (
+                      <Button
+                        key={index}
+                        onClick={() => {
+                          window.open(link, "_blank");
+                        }}
+                        imagePath="/github-portfolio/assets/github.svg"
+                        imageAltText="github"
+                        imageStyles="size-4"
+                        text={
+                          curParent.githubnames
+                            ? curParent.githubnames[index]
+                            : ""
+                        }
+                        height={28}
+                        buttonStyles="px-[5px]"
+                      />
+                    );
+                  })}
+                <Button
+                  onClick={() => {
+                    download(
+                      `/github-portfolio/portfolio${location.pathname}`,
+                      curItem.name,
+                    );
+                  }}
+                  imagePath="/github-portfolio/assets/download.svg"
+                  imageAltText="download"
+                  imageStyles="size-4"
+                  height={28}
+                  buttonStyles="px-[5px]"
+                />
+              </div>
             </li>
             <li key={1} className="flex justify-center">
               {curItem.type === "file" ? (

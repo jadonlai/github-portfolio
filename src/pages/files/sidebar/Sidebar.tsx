@@ -3,7 +3,7 @@ import Directories from "./Directories";
 
 const Sidebar = () => {
   return (
-    <div className="h-full w-[320px] p-4">
+    <div className="h-full w-[390px] p-4">
       <div className="flex flex-row items-center space-x-2">
         <Button
           imagePath="/github-portfolio/assets/collapse.svg"

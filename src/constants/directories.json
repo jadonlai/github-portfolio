@@ -78,7 +78,11 @@
         "type": "folder",
         "commit": "2d rigid body physics engine from scratch",
         "date": "present",
-        "github": "https://github.com/jadonlai/physics-engine-sharp",
+        "github": [
+          "https://github.com/jadonlai/physics-engine-csharp",
+          "https://github.com/jadonlai/physics-engine-cplusplus"
+        ],
+        "githubnames": ["C#", "C++"],
         "contents": [
           {
             "name": "physics_overview.md",
@@ -94,7 +98,7 @@
         "type": "folder",
         "commit": "analysis of ai algorithms: bfs, dfs, gbfs, a*",
         "date": "2024",
-        "github": "https://github.com/jadonlai/wikipedia-game-solver",
+        "github": ["https://github.com/jadonlai/wikipedia-game-solver"],
         "contents": [
           {
             "name": "wikipedia_overview.md",
@@ -125,7 +129,7 @@
         "type": "folder",
         "commit": "custom file system that can be mounted on a unix file",
         "date": "2024",
-        "github": "https://github.com/jadonlai/tiny-fs",
+        "github": ["https://github.com/jadonlai/tiny-fs"],
         "contents": [
           {
             "name": "tfs_overview.md",
