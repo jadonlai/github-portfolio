@@ -1,5 +1,6 @@
 import About from "./sidecontent/About";
 import Content from "./Content";
+import Header from "./Header";
 import Home from "./Home";
 import LanguageBar from "./sidecontent/languages/LanguageBar";
 import Languages from "./sidecontent/languages/Languages";
@@ -12,6 +13,7 @@ import Title from "./Title";
 export {
   About,
   Content,
+  Header,
   Home,
   LanguageBar,
   Languages,
