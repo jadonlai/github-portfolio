@@ -1,6 +1,6 @@
 # 🧑‍💻 Jadon Lai
 
-![headshot](/public/assets/headshot.jpeg)
+![headshot](/github-portfolio/public/assets/headshot.jpeg)
 
 📍 **Location:** San Luis Obispo, CA  
 💼 **Seeking roles in:** Software Development  
@@ -56,7 +56,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
   - Vectors
   - Rigid body classes
 
-[![GitHub](/public/assets/github.svg)](https://github.com/jadonlai/physics-engine-csharp) C# &emsp; [![GitHub](/public/assets/github.svg)](https://github.com/jadonlai/physics-engine-cplusplus) C++
+[![GitHub](/github-portfolio/assets/github.svg)](https://github.com/jadonlai/physics-engine-csharp) C# &emsp; [![GitHub](/github-portfolio/public/assets/github.svg)](https://github.com/jadonlai/physics-engine-cplusplus) C++
 
 ### 🌐 [**Wikipedia Game Solver**](./projects/wikipedia_game_solver) (2024)
 
@@ -64,7 +64,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
 - **Technologies:** Python, Wikipedia API, Sentence Transformers
 - **Concepts:** Graph theory, GOFAI
 
-[![GitHub](/public/assets/github.svg)](https://github.com/jadonlai/wikipedia-game-solver) GitHub
+[![GitHub](/github-portfolio/public/assets/github.svg)](https://github.com/jadonlai/wikipedia-game-solver) GitHub
 
 ### 🗂 [**Tiny File System**](./projects/tfs) (2024)
 
@@ -76,7 +76,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
   - Timestamps
   - Read/write permissions
 
-[![GitHub](/public/assets/github.svg)](https://github.com/jadonlai/tiny-fs) GitHub
+[![GitHub](/github-portfolio/public/assets/github.svg)](https://github.com/jadonlai/tiny-fs) GitHub
 
 ### 🚗 [**Data Science for Cars**](./projects/data_science_for_cars) (2024)
 
@@ -84,7 +84,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
 - **Technologies:** Python, Google Colab
 - **Concepts:** KNN, KMeans, data science
 
-[![Code](/public/assets/code.svg)](https://drive.google.com/drive/folders/1ZYxOVuBHhR4QYLnuqkXYIyV5d0nbkWRD) Code and files
+[![Code](/github-portfolio/public/assets/code.svg)](https://drive.google.com/drive/folders/1ZYxOVuBHhR4QYLnuqkXYIyV5d0nbkWRD) Code and files
 
 ---
 
@@ -101,4 +101,4 @@ Check out my full [resume](./resume.pdf) for more information!
 
 ---
 
-[![GitHub](/public/assets/github.svg)](https://github.com/jadonlai) [![LinkedIn](/public/assets/linkedin.svg)](https://www.linkedin.com/in/jadon-lai-16b550242/)
+[![GitHub](/github-portfolio/public/assets/github.svg)](https://github.com/jadonlai) [![LinkedIn](/github-portfolio/public/assets/linkedin.svg)](https://www.linkedin.com/in/jadon-lai-16b550242/)
