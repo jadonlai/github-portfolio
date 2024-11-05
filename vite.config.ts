@@ -15,7 +15,7 @@ export default defineConfig({
     },
   ],
   base: "/github-portfolio/",
-  build: {
-    outDir: "build",
-  },
+  // build: {
+  //   outDir: "build",
+  // },
 });
