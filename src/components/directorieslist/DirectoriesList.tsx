@@ -26,7 +26,7 @@ const DirectoriesList = ({
         {topItem}
       </li>
       {items &&
-        items.map((item) => (
+        items.map((item, index) => (
           <Item
             key={item.name}
             imagePath={`/assets/${item.type}.svg`}
@@ -41,6 +41,7 @@ const DirectoriesList = ({
             }
             commit={item.commit}
             date={item.date}
+            lastItem={index === items.length - 1}
           />
         ))}
     </ul>

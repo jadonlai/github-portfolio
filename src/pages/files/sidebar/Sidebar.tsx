@@ -26,9 +26,9 @@ const Sidebar = () => {
           onClick={() => {}}
         />
       </div>
-      <div className="mt-2">
+      {/* <div className="mt-2">
         <Search text="Go to file" width={287} />
-      </div>
+      </div> */}
       <div className="mt-3">
         <Directories />
       </div>

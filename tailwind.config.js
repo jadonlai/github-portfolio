@@ -44,6 +44,11 @@ export default {
         },
       }),
     },
+    screens: {
+      sm: "780px",
+      md: "1110px",
+      lg: "1340px",
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };

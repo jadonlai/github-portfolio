@@ -1,7 +1,7 @@
 const HeaderRight = () => {
   return (
     <div>
-      <button
+      {/* <button
         onClick={() => {
           window.open("https://github.com/jadonlai", "_blank");
         }}
@@ -11,7 +11,7 @@ const HeaderRight = () => {
           alt="profile"
           className="size-8 rounded-full border-[1px] border-gray-border"
         />
-      </button>
+      </button> */}
     </div>
   );
 };

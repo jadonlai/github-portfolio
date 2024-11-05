@@ -5,13 +5,7 @@ import Languages from "./languages/Languages";
 const SideContent = () => {
   return (
     <ul className="max-w-[275px] space-y-5">
-      <li key={0} className="space-y-3">
-        <About />
-        <div className="flex flex-row items-center space-x-2">
-          <img src="/assets/book.svg" alt="book" className="size-4" />
-          <button className="text-sm text-gray">Readme</button>
-        </div>
-      </li>
+      <About key={0} />
       <li key={1}>
         <hr className="mb-3 border-gray-border" />
         <div className="mb-3 flex h-[32px] flex-row items-center justify-between">

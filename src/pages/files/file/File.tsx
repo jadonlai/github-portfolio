@@ -28,15 +28,10 @@ const FileInProgress = () => {
 
 const Header = () => {
   return (
-    <div
-      style={{
-        gridTemplateColumns: "1fr 1.5fr 1fr",
-      }}
-      className="grid w-full grid-cols-3 justify-between truncate text-xs font-bold text-gray"
-    >
+    <div className="grid w-full grid-cols-3 justify-between truncate text-xs font-bold text-gray sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
       <h1>Name</h1>
-      <h1>Description</h1>
-      <h1 className="text-right">Timeframe</h1>
+      <h1 className="hidden sm:inline md:inline lg:inline">Description</h1>
+      <h1 className="hidden text-right md:inline lg:inline">Timeframe</h1>
     </div>
   );
 };
@@ -116,14 +111,14 @@ const File = () => {
         )}
       </div>
       <div className="flex w-full flex-row items-center justify-between rounded-md border-[1px] border-gray-border p-3">
-        <div className="flex flex-row items-center space-x-2">
-          <img src="/assets/logo.png" alt="logo" className="size-5" />
+        <div className="flex flex-row items-center">
+          <img src="/assets/logo.png" alt="logo" className="mr-2 size-5" />
           <h1 className="text-sm font-bold text-secondary">jadonlai</h1>
-          <h1 className="text-sm text-gray">
+          <h1 className="truncate whitespace-nowrap px-2 text-sm text-gray">
             {path[0] === "/main" ? "initial commit" : curItem.commit}
           </h1>
         </div>
-        <h1 className="text-sm text-gray">
+        <h1 className="truncate whitespace-nowrap text-sm text-gray">
           {curItem.date === "cur_date"
             ? new Date().toLocaleDateString("en-US", {
                 year: "numeric",

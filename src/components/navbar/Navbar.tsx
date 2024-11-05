@@ -11,8 +11,6 @@ const Navbar = () => {
       </div>
       <ul className="flex flex-row space-x-2 border-b-[1px] border-b-gray-border pl-4">
         <Tab title="Code" imagePath="/assets/code.svg" selected />
-        <Tab title="Issues" imagePath="/assets/issues.svg" />
-        <Tab title="Pull requests" imagePath="/assets/pull_requests.svg" />
       </ul>
     </div>
   );

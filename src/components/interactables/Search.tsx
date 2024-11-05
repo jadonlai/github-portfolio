@@ -14,7 +14,7 @@ const Search = ({ width, height = 32, text }: SearchProps) => {
         <img src={"/assets/search.svg"} alt="search" />
         <input
           placeholder={text}
-          className="w-28 bg-primary text-secondary outline-none"
+          className="w-[100%] bg-primary text-secondary outline-none"
         />
       </div>
       <div className="rounded-md border-[1px] border-gray-border bg-primary-200">
