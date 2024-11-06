@@ -23,8 +23,6 @@ const FileContent = ({ curItem, curParent, path }: FileContentProps) => {
   const { dimensions, download } = useFile();
   const headerHeight = 42.5;
 
-  console.log(curItem);
-
   return (
     <div className={`mb-10 mt-4 h-[${dimensions.height}px]`}>
       <ul className="size-full divide-y-[1px] divide-gray-border rounded-md border-[1px] border-gray-border">

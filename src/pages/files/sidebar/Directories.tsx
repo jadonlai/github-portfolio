@@ -10,6 +10,10 @@ const Directories = () => {
   const { getPath } = useFile();
   const location = useLocation();
   const [openFolders, setOpenFolders] = useState<string[]>([]);
+  const curPathItem = getPath(location.pathname).at(-1);
+  if (!curPathItem) {
+    return;
+  }
 
   useEffect(() => {
     const path = getPath(location.pathname);
@@ -40,6 +44,7 @@ const Directories = () => {
           contents={item.contents}
           depth={0}
           path={item.name}
+          curPathItem={curPathItem}
         />
       );
     } else {
@@ -49,6 +54,7 @@ const Directories = () => {
           name={item.name}
           depth={0}
           path={item.name}
+          curPathItem={curPathItem}
         />
       );
     }

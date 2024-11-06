@@ -14,6 +14,7 @@ interface FolderDisplayProps {
   }[];
   depth: number;
   path: string;
+  curPathItem: string;
 }
 
 const FolderDisplay = ({
@@ -24,13 +25,14 @@ const FolderDisplay = ({
   contents,
   depth,
   path,
+  curPathItem,
 }: FolderDisplayProps) => {
   return (
     <>
       <Link
         to={`/main/${path}`}
         style={{ paddingLeft: depth * 12 }}
-        className="flex w-full flex-row items-center space-x-1 rounded-md hover:bg-gray-collapsehover"
+        className={`flex w-full flex-row items-center space-x-1 rounded-md hover:bg-gray-collapsehover ${curPathItem === name ? "bg-gray-collapseopen hover:bg-gray-collapseopen" : ""}`}
       >
         <button
           onClick={(event) => {
@@ -71,12 +73,14 @@ const FolderDisplay = ({
                   contents={content.contents}
                   depth={depth + 1}
                   path={`${path}/${content.name}`}
+                  curPathItem={curPathItem}
                 />
               ) : (
                 <FileDisplay
                   name={content.name}
                   depth={depth + 1}
                   path={`${path}/${content.name}`}
+                  curPathItem={curPathItem}
                 />
               )}
             </div>
