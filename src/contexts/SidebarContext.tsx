@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react";
 
 interface SidebarContextType {
   sidebarOpen: boolean;
-  toggleSidebar: () => void;
+  toggleSidebar: (val: boolean) => void;
 }
 
 const SidebarContext = createContext<SidebarContextType | undefined>(undefined);
@@ -14,8 +14,8 @@ export const SidebarProvider = ({
 }) => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
-  const toggleSidebar = () => {
-    setSidebarOpen((prev) => !prev);
+  const toggleSidebar = (val: boolean) => {
+    setSidebarOpen(val);
   };
 
   return (

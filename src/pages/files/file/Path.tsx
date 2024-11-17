@@ -20,14 +20,21 @@ const Path = ({ path }: PathProps) => {
           imagePath="/github-portfolio/assets/collapse_open.svg"
           imageAltText="collapse_open"
           onClick={() => {
-            toggleSidebar();
+            toggleSidebar(true);
           }}
           buttonStyles="border-none mr-1 mt-1 self-center bg-gray-collapseopen hover:bg-gray-collapsehover"
         />
       )}
-      <Link to="/" className="text-base font-bold text-blue hover:underline">
-        portfolio
-      </Link>
+      <button
+        onClick={(event) => {
+          event.preventDefault();
+          toggleSidebar(true);
+        }}
+      >
+        <Link to="/" className="text-base font-bold text-blue hover:underline">
+          portfolio
+        </Link>
+      </button>
       {path[0] === "/main" ? (
         <h1 className="text-base text-gray">/</h1>
       ) : (

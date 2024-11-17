@@ -12,7 +12,7 @@ const Sidebar = () => {
           imagePath="/github-portfolio/assets/collapse.svg"
           imageAltText="collapse"
           onClick={() => {
-            toggleSidebar();
+            toggleSidebar(false);
           }}
           buttonStyles="border-none bg-gray-collapseopen hover:bg-gray-collapsehover"
         />
