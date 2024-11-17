@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
+import { Button } from "../../../components/interactables";
 import { useFile } from "../../../hooks";
+import { useSidebarContext } from "../../../contexts/SidebarContext";
 
 interface PathProps {
   path: string[];
@@ -8,10 +10,21 @@ interface PathProps {
 
 const Path = ({ path }: PathProps) => {
   const { copyImage, copyImageClick } = useFile();
+  const { sidebarOpen, toggleSidebar } = useSidebarContext();
   let curPath = "/main";
 
   return (
     <div className="mb-6 flex h-5 flex-row items-center space-x-1">
+      {!sidebarOpen && (
+        <Button
+          imagePath="/github-portfolio/assets/collapse_open.svg"
+          imageAltText="collapse_open"
+          onClick={() => {
+            toggleSidebar();
+          }}
+          buttonStyles="border-none mr-1 mt-1 self-center bg-gray-collapseopen hover:bg-gray-collapsehover"
+        />
+      )}
       <Link to="/" className="text-base font-bold text-blue hover:underline">
         portfolio
       </Link>

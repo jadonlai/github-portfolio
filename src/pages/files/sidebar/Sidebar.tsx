@@ -1,14 +1,19 @@
 import { Button } from "../../../components/interactables";
+import { useSidebarContext } from "../../../contexts/SidebarContext";
 import Directories from "./Directories";
 
 const Sidebar = () => {
+  const { toggleSidebar } = useSidebarContext();
+
   return (
-    <div className="h-full w-[390px] p-4">
+    <div className="h-full min-h-screen w-[390px] border-r-[1px] border-r-gray-border p-4">
       <div className="flex flex-row items-center space-x-2">
         <Button
           imagePath="/github-portfolio/assets/collapse.svg"
           imageAltText="collapse"
-          onClick={() => {}}
+          onClick={() => {
+            toggleSidebar();
+          }}
           buttonStyles="border-none bg-gray-collapseopen hover:bg-gray-collapsehover"
         />
         <h1 className="text-base font-bold text-secondary">Files</h1>

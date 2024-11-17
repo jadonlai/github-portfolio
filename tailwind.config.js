@@ -50,5 +50,5 @@ export default {
       lg: "1340px",
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), require("tailwindcss-motion")],
 };

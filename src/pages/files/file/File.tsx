@@ -44,7 +44,7 @@ const File = () => {
   };
 
   return (
-    <div className="h-full min-h-screen w-full border-l-[1px] border-l-gray-border px-4 pt-5">
+    <div className="h-full min-h-screen w-full px-4 pt-5">
       <Path path={path} />
       <FileTitle path={path} commit={curItem.commit} date={curItem.date} />
       {curItem.type === "folder" || path[0] === "/main" ? (
