@@ -4,7 +4,7 @@ import Languages from "./languages/Languages";
 
 const SideContent = () => {
   return (
-    <ul className="max-w-[275px] space-y-5">
+    <ul className="w-full space-y-5 sm:max-w-[275px]">
       <About key={0} />
       <li key={1}>
         <hr className="mb-3 border-gray-border" />

@@ -62,7 +62,7 @@ const ContentHeader = () => {
 
 const Content = () => {
   return (
-    <div className="w-[73.75%]">
+    <div className="w-full sm:w-[73.75%]">
       <Header />
       <DirectoriesList topItem={<ContentHeader />} items={structure} />
       <Readme />
