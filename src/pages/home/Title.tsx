@@ -3,7 +3,7 @@ import { Button } from "../../components/interactables";
 const Title = () => {
   return (
     <>
-      <div className="flex h-16 flex-row items-center justify-between">
+      <div className="my-2 items-center space-y-2 sm:my-0 sm:flex sm:h-16 sm:flex-row sm:justify-between sm:space-y-0">
         <div className="flex flex-row items-center">
           <div className="flex flex-row items-center space-x-2">
             <img
@@ -25,7 +25,7 @@ const Title = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row justify-end space-x-2">
+        <div className="flex flex-row space-x-2 sm:justify-end">
           <Button
             imagePath="/github-portfolio/assets/gmail.svg"
             imageAltText="gmail"

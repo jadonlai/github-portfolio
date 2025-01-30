@@ -3,7 +3,7 @@ import Tab from "./Tab";
 
 const Navbar = () => {
   return (
-    <div className="flex h-[105px] flex-col justify-between bg-primary-100 text-secondary">
+    <div className="flex h-[105px] min-w-[1000px] flex-col justify-between bg-primary-100 text-secondary">
       <div className="mx-4 flex flex-row items-center justify-between pt-4">
         <HeaderLeft />
       </div>
