@@ -73,7 +73,7 @@ const FileContent = ({ curItem, curParent, path }: FileContentProps) => {
             ) : curItem.file_type === "markdown" ? (
               <MarkdownFile
                 filepath={`/github-portfolio/portfolio${path}`}
-                styles="mx-40"
+                styles="sm:mx-40"
               />
             ) : curItem.file_type === "video" ? (
               <Video
