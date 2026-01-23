@@ -1,7 +1,6 @@
 # 🛠 AI/ML Engineer – Back Problem Treatments
 
-**Project Overview:**
-
+**Project Overview:**\
 At MyBackHub, I am designing, training, and deploying AI/ML models to help patients with back problems using over 3 million patient records. The goal is to assist healthcare providers in early detection and personalized treatment planning by leveraging predictive modeling on large-scale healthcare datasets.
 
 ---
