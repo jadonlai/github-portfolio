@@ -12,7 +12,18 @@ This README provides a concise overview of my portfolio, for those seeking a qui
 
 ## 📝 Experience
 
-### 🛠 [**AI for Search and Rescue**](/github-portfolio/main/experience/ai_for_sar) (2024)
+### 🧠 [**AI/ML Engineer**](/github-portfolio/main/experience/ai_ml_engineer.md) | MyBackHub (2026 – Present)
+
+- **Overview:** Designing and deploying AI models trained on 3M+ patient records to predict and diagnose back problems.
+- **Technologies:** Python, TensorFlow, PyTorch, Sci-Kit Learn, Pandas
+- **Concepts:** AI, ML, predictive modeling, feature engineering, healthcare analytics
+- **Skills:**
+  - Scalable data pipeline design and implementation
+  - Large-scale data cleaning, transformation, and analysis
+  - Developing maintainable and production-ready AI/ML workflows
+  - Model evaluation, training, and deployment for healthcare applications
+
+### 🛠 [**AI for Search and Rescue**](/github-portfolio/main/experience/ai_for_sar) | Cal Poly SLO (2024)
 
 - **Overview:** Spearheaded developing AI tools for optimizing search and rescue operations, including a public transit search widget.
 - **Technologies:** Tensorflow, Sci-Kit Learn, Python, Numpy, Pandas, Folium
@@ -47,16 +58,6 @@ This README provides a concise overview of my portfolio, for those seeking a qui
   - Customizable attendance system with filters and search functionality
   - Synced race stopwatch for each team
   - Collaborative calendar for each team
-
-### 🔲 [**2D Physics Engine**](/github-portfolio/main/projects/physics_engine) (Present)
-
-- **Overview:** Building a 2D rigid body physics engine from scratch.
-- **Technologies:** C#, C++, MonoGame, SFML
-- **Features (to be expanded):**
-  - Vectors
-  - Rigid body classes
-
-[![GitHub](https://jadonlai.github.io/images/github.svg)](https://github.com/jadonlai/physics-engine-csharp) C# &emsp; [![GitHub](https://jadonlai.github.io/images/github.svg)](https://github.com/jadonlai/physics-engine-cplusplus) C++
 
 ### 🌐 [**Wikipedia Game Solver**](/github-portfolio/main/projects/wikipedia_game_solver) (2024)
 
