@@ -81,26 +81,6 @@
         ]
       },
       {
-        "name": "physics_engine",
-        "type": "folder",
-        "commit": "2d rigid body physics engine from scratch",
-        "date": "present",
-        "github": [
-          "https://github.com/jadonlai/physics-engine-csharp",
-          "https://github.com/jadonlai/physics-engine-cplusplus"
-        ],
-        "githubnames": ["C#", "C++"],
-        "contents": [
-          {
-            "name": "physics_overview.md",
-            "type": "file",
-            "file_type": "markdown",
-            "commit": "initial commit",
-            "date": "present"
-          }
-        ]
-      },
-      {
         "name": "wikipedia_game_solver",
         "type": "folder",
         "commit": "analysis of ai algorithms: bfs, dfs, gbfs, a*",

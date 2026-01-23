@@ -59,16 +59,6 @@ This README provides a concise overview of my portfolio, for those seeking a qui
   - Synced race stopwatch for each team
   - Collaborative calendar for each team
 
-### 🔲 [**2D Physics Engine**](/github-portfolio/main/projects/physics_engine) (Present)
-
-- **Overview:** Building a 2D rigid body physics engine from scratch.
-- **Technologies:** C#, C++, MonoGame, SFML
-- **Features (to be expanded):**
-  - Vectors
-  - Rigid body classes
-
-[![GitHub](https://jadonlai.github.io/images/github.svg)](https://github.com/jadonlai/physics-engine-csharp) C# &emsp; [![GitHub](https://jadonlai.github.io/images/github.svg)](https://github.com/jadonlai/physics-engine-cplusplus) C++
-
 ### 🌐 [**Wikipedia Game Solver**](/github-portfolio/main/projects/wikipedia_game_solver) (2024)
 
 - **Overview:** Analyzed AI algorithms for solving the "Wikipedia Game" using BFS, DFS, GBFS, and A\*.

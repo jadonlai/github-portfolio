@@ -25,11 +25,11 @@ const Sidebar = () => {
           text="main"
           onClick={() => {}}
         />
-        <Button
+        {/* <Button
           imagePath="/github-portfolio/assets/search.svg"
           imageAltText="search"
           onClick={() => {}}
-        />
+        /> */}
       </div>
       {/* <div className="mt-2">
         <Search text="Go to file" width={287} />
