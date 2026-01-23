@@ -6,6 +6,13 @@
     "date": "2023 - present",
     "contents": [
       {
+        "name": "ai_ml_engineer.md",
+        "type": "file",
+        "file_type": "markdown",
+        "commit": "mybackhub",
+        "date": "2026 - present"
+      },
+      {
         "name": "ai_for_sar",
         "type": "folder",
         "commit": "ai for search and rescue",
@@ -175,7 +182,7 @@
     "name": "resume.pdf",
     "type": "file",
     "file_type": "pdf",
-    "commit": "seeking employment!",
+    "commit": "always open to new opportunities!",
     "date": "cur_date"
   }
 ]
