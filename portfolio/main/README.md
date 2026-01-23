@@ -12,7 +12,18 @@ This README provides a concise overview of my portfolio, for those seeking a qui
 
 ## 📝 Experience
 
-### 🛠 [**AI for Search and Rescue**](/github-portfolio/main/experience/ai_for_sar) (2024)
+### 🧠 [**AI/ML Engineer**](/github-portfolio/main/experience/ai_ml_engineer.md) | MyBackHub (Jan. 2026 – Present)
+
+- **Overview:** Designing and deploying AI models trained on 3M+ patient records to predict and diagnose back problems.
+- **Technologies:** Python, TensorFlow, PyTorch, Sci-Kit Learn, Pandas
+- **Concepts:** AI, ML, predictive modeling, feature engineering, healthcare analytics
+- **Skills:**
+  - Scalable data pipeline design and implementation
+  - Large-scale data cleaning, transformation, and analysis
+  - Developing maintainable and production-ready AI/ML workflows
+  - Model evaluation, training, and deployment for healthcare applications
+
+### 🛠 [**AI for Search and Rescue**](/github-portfolio/main/experience/ai_for_sar) | Cal Poly SLO (2024)
 
 - **Overview:** Spearheaded developing AI tools for optimizing search and rescue operations, including a public transit search widget.
 - **Technologies:** Tensorflow, Sci-Kit Learn, Python, Numpy, Pandas, Folium
