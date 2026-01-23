@@ -1,11 +1,11 @@
 # 🛠 AI for Search and Rescue - Public Transit Widget
 
-**Project Overview:**  
+**Role Overview:**  
 The AI for Search and Rescue (AI4SaR) Public Transit Widget is designed to assist first responders by providing predictions on possible locations of missing persons based on public transit patterns. Using advanced machine learning models, the widget estimates where a missing person might go within a transit system like the Bay Area Rapid Transit (BART) and provides probabilities for each station.
 
 ---
 
-## 🚀 Project Summary
+## 🚀 Role Summary
 
 With no prior work done in this niche field, I am leading the research and development efforts for Cal Poly's AI4SaR team. This widget operates under the principle that a missing person may "follow the crowd" on public transit, and I have conducted a comprehensive analysis of BART's patterns and features to support this assumption.
 
