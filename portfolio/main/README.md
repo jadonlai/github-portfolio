@@ -12,7 +12,7 @@ This README provides a concise overview of my portfolio, for those seeking a qui
 
 ## 📝 Experience
 
-### 🧠 [**AI/ML Engineer**](/github-portfolio/main/experience/ai_ml_engineer.md) | MyBackHub (Jan. 2026 – Present)
+### 🧠 [**AI/ML Engineer**](/github-portfolio/main/experience/ai_ml_engineer.md) | MyBackHub (2026 – Present)
 
 - **Overview:** Designing and deploying AI models trained on 3M+ patient records to predict and diagnose back problems.
 - **Technologies:** Python, TensorFlow, PyTorch, Sci-Kit Learn, Pandas
